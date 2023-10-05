@@ -39,6 +39,9 @@ $subtitle_font_weight: 400;
   flex-wrap: wrap;
   width: 100%;
   gap: 20px;
+  &.ta--c {
+    justify-content: center;
+  }
   .forBtn {
     margin-top: 14px;
   }

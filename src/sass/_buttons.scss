@@ -19,17 +19,15 @@ $button_padding_tablet: 8px 28px;
 $button_height_mobil: 38px;
 $button_fontsize_mobil: 14px;
 $button_padding_mobil: 8px 20px;
-
 /*big*/
-$button_big_height: 50px;
-$button_big_fontsize: 18px;
-
+$button_big_height: 70px;
+$button_big_fontsize: 20px;
+$button_big_padding: 10px 40px;
 /*small*/
 $button_small_height: 30px;
 $button_small_fontsize: 12px;
 $button_small_border_radius: 8px;
 $button_small_padding: 8px 16px;
-
 /*button--border*/
 $button_border_border: 1px solid $color;
 $button_border_border_hover: 1px solid $color;
@@ -80,6 +78,7 @@ $button_gray_color_hover: $white_text;
   color: $button_color;
   transition: $cubic;
   user-select: none;
+  box-shadow: inset 0px -10px 20px rgba(0, 0, 0, 0.2);
   /*desctop*/
   @media screen and (min-width: 1280px) {
     height: $button_height;
@@ -108,6 +107,28 @@ $button_gray_color_hover: $white_text;
   &.big {
     height: $button_big_height;
     font-size: $button_big_fontsize;
+    padding: $button_big_padding;
+    min-width: 320px;
+  }
+
+  &.icon {
+    height: 60px;
+    width: 60px;
+    padding: 0px;
+    svg {
+      fill: $color;
+      width: 50%;
+      height: 50%;
+      transition: $cubic;
+      pointer-events: none;
+    }
+    &:hover,
+    &:focus,
+    &.active {
+      svg {
+        fill: $white;
+      }
+    }
   }
 
   &.small {
@@ -140,6 +161,20 @@ $button_gray_color_hover: $white_text;
       border: $button_gray_border_hover;
       background: $button_gray_background_hover;
       color: $button_gray_color_hover;
+    }
+  }
+
+  &.button--white {
+    border: $white;
+    background: $white;
+    color: $color;
+    text-transform: uppercase;
+    &:hover,
+    &:focus,
+    &.active {
+      border: $color_hover;
+      background: $color_hover;
+      color: $white;
     }
   }
 
