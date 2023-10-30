@@ -5,4 +5,6 @@ export const refs = {
   goBack: document.querySelector('[data-goback]'),
   homeBtn: document.querySelector('[data-home]'),
   stepButtons: document.querySelectorAll('[data-step]'),
+  lectionTitle: document.querySelector('.js--lectionName'),
+  aufgabeKey: document.querySelector('.js--aufgabeKey'),
 };

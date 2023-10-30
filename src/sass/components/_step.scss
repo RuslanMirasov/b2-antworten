@@ -19,7 +19,7 @@
         pointer-events: none;
       }
     }
-    @media screen and (max-width: 359px) {
+    @media screen and (max-width: 375px) {
       min-width: 100%;
     }
   }
@@ -60,6 +60,10 @@
     padding: 14px 0px;
     font-size: 20px;
     line-height: 1.2;
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      padding: 8px 0px;
+    }
     span {
       display: block;
       font-family: 'semibold';
