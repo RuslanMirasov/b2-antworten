@@ -1,4 +1,4 @@
-export const ab = [
+export const kb = [
   {
     id: '1',
     name: 'Ein neuer Beruf',
@@ -513,6 +513,391 @@ export const ab = [
         {
           number: 'Antworten:',
           answer: 'war, hatte, bekam, sagte, schockierte, war, musste, wollte',
+        },
+      ],
+    },
+  },
+  {
+    id: '3',
+    name: 'Auf Jobsuche',
+    tasks: {
+      '1b': [
+        {
+          number: 'Text 1',
+          answer: 'Beruf / Job: Rettungsschwimmer',
+        },
+        {
+          number: 'Text 2',
+          answer: 'Beruf / Job: Verkäufer und Monteure. Quelle: Radio',
+        },
+        {
+          number: 'Text 3',
+          answer: 'Quelle: Berufsinfo-Podcast',
+        },
+      ],
+      '2a': [
+        {
+          number: '1',
+          answer: 'richtig',
+        },
+        {
+          number: '2',
+          answer: 'richtig',
+        },
+        {
+          number: '3',
+          answer: 'falsch',
+        },
+      ],
+      '2b': [
+        {
+          number: '1',
+          answer: '-e',
+        },
+        {
+          number: '2',
+          answer: '-en',
+        },
+        {
+          number: '3',
+          answer: '-er',
+        },
+        {
+          number: '4',
+          answer: '-en',
+        },
+      ],
+      '4a': [
+        {
+          number: 'Falsch:',
+          answer: 'zusammenkleben, Arztpraxen',
+        },
+      ],
+      '4b': [
+        {
+          number: '1',
+          answer: 'a',
+        },
+        {
+          number: '2',
+          answer: 'a',
+        },
+        {
+          number: '3',
+          answer: 'b',
+        },
+        {
+          number: '4',
+          answer: 'a',
+        },
+      ],
+      5: [
+        {
+          number: 'Anzeige 1',
+          answer:
+            'Kurstitel: Deutsch für Pflegeberufe. Dauer: Vom 02.03. bis zum 28.06. Anbieter: Volkshochschule. Vorkenntnisse: Bestandene B2 Prüfung. Kosten: Förderung durch die Agentur für Arbeit.',
+        },
+        {
+          number: 'Anzeige 2',
+          answer:
+            'Kurstitel: Meistervorbereitungslehrgang für Maler und Lackierer, Schwerpunkt Fahrzeuglackierung, Teile I + II. Dauer: Vom 06.05.2020 bis zum 27.05.2021. Anbieter: Berufsbildungsstätte Koblenz. Vorkenntnisse: Ausbildung als Maler und Lackierer, mind. 3 Jahre Berufserfahrung. Kosten: 6800€.',
+        },
+        {
+          number: 'Anzeige 3',
+          answer:
+            'Kurstitel: Kompaktes Bewerbungstraining. Dauer: Am Freitag, den 18.05, und am Samstag, den 19.05. Anbieter: Weiterbildungsinstitut Bewerbungstraining. Vorkenntnisse: keine. Kosten: 160€.',
+        },
+      ],
+      '6a': [
+        {
+          number: '1',
+          answer: 'Weil sein Chef bald in Rente geht.',
+        },
+        {
+          number: '2',
+          answer: 'Eine Meisterprüfung abzulegen und sich selbstständig zu machen.',
+        },
+        {
+          number: '3',
+          answer: 'Eine neue Arbeit zu suchen.',
+        },
+        {
+          number: '4',
+          answer: 'Anzeigen 2 + 3',
+        },
+      ],
+      '6b': [
+        {
+          number: '1',
+          answer: 'e',
+        },
+        {
+          number: '2',
+          answer: 'a',
+        },
+        {
+          number: '3',
+          answer: 'd',
+        },
+        {
+          number: '4',
+          answer: 'b',
+        },
+        {
+          number: '5',
+          answer: 'c',
+        },
+      ],
+      '8a': [
+        {
+          number: '1',
+          answer: 'Maler',
+        },
+        {
+          number: '2',
+          answer: 'Beruf',
+        },
+        {
+          number: '3',
+          answer: 'Stelle',
+        },
+        {
+          number: '4',
+          answer: 'Erfahrung',
+        },
+        {
+          number: '5',
+          answer: 'Fachwortschatz',
+        },
+      ],
+      '8b': [
+        {
+          number: 'Ausbildung:',
+          answer:
+            'In meinem Heimatland Ghana habe ich die Ausbildung als Maler gemacht. Arbeitserfahrung: und dann 14 Jahre lang in drei unterschiedlichen Betrieben gearbeitet.',
+        },
+        {
+          number: '/',
+          answer:
+            'seit 3 Jahren arbeite ich bei der Firma Kolores. Fachkenntnisse: Ich habe Erfahrung im Innenund Außenbereich, an Alt- und Neubauten und kenne die Arbeitsabläufe in kleinen und großen Betrieben.',
+        },
+        {
+          number: 'Deutschkenntnisse:',
+          answer: ' Mein Deutsch ist zwischen B1 und B2. Ich besitze einen guten Fachwortschatz.',
+        },
+      ],
+      '9a': [
+        {
+          number: '1',
+          answer: 'falsch',
+        },
+        {
+          number: '2',
+          answer: 'falsch',
+        },
+        {
+          number: '3',
+          answer: 'richtig',
+        },
+        {
+          number: '4',
+          answer: 'richtig',
+        },
+        {
+          number: '5',
+          answer: 'richtig',
+        },
+      ],
+      '9b': [
+        {
+          number: '1',
+          answer: 'Andres',
+        },
+        {
+          number: '2',
+          answer: 'Andres',
+        },
+        {
+          number: '3',
+          answer: 'VHS-Mitarbeiterin',
+        },
+        {
+          number: '4',
+          answer: 'VHS-Mitarbeiterin',
+        },
+        {
+          number: '5',
+          answer: 'VHS-Mitarbeiterin',
+        },
+        {
+          number: '6',
+          answer: 'Andres',
+        },
+      ],
+      '9c': [
+        {
+          number: '2',
+          answer: 'Könnten',
+        },
+        {
+          number: '3',
+          answer: 'Hätten',
+        },
+        {
+          number: '4',
+          answer: 'müssten',
+        },
+        {
+          number: '5',
+          answer: 'müssten',
+        },
+        {
+          number: '6',
+          answer: 'wären',
+        },
+      ],
+      '9d': [
+        {
+          number: '1',
+          answer: 'Vollverben',
+        },
+        {
+          number: '2',
+          answer: 'Modalverben',
+        },
+        {
+          number: '3',
+          answer: 'haben',
+        },
+        {
+          number: '4',
+          answer: 'sein',
+        },
+      ],
+      '10a': [
+        {
+          number: '2',
+          answer: 'wäre',
+        },
+        {
+          number: '3',
+          answer: 'hätte, hätte',
+        },
+        {
+          number: '4',
+          answer: 'wäre, würde',
+        },
+        {
+          number: '1',
+          answer: 'hätte, könnte',
+        },
+      ],
+      '11a': [
+        {
+          number: '1',
+          answer: 'Anerkennung',
+        },
+        {
+          number: '2',
+          answer: 'besorgen',
+        },
+        {
+          number: '3',
+          answer: 'beantragen',
+        },
+        {
+          number: '4',
+          answer: 'Abschlusszeugnis',
+        },
+        {
+          number: '5',
+          answer: 'Arbeitszeugnisse',
+        },
+        {
+          number: '6',
+          answer: 'übersetzen',
+        },
+        {
+          number: '7',
+          answer: 'beglaubigen',
+        },
+        {
+          number: '8',
+          answer: 'beglaubigte',
+        },
+      ],
+      '12a': [
+        {
+          number: '1',
+          answer: 'Sami',
+        },
+        {
+          number: '2',
+          answer: 'Hiba',
+        },
+        {
+          number: '3',
+          answer: 'Delali',
+        },
+        {
+          number: '4',
+          answer: 'Sami',
+        },
+        {
+          number: '5',
+          answer: 'Burak',
+        },
+        {
+          number: '6',
+          answer: 'Delali',
+        },
+        {
+          number: '7',
+          answer: 'Burak',
+        },
+        {
+          number: '8',
+          answer: 'Hiba',
+        },
+      ],
+      '12b': [
+        {
+          number: 'Burak:',
+          answer: 'wird … eröffnen;',
+        },
+        {
+          number: 'Delali:',
+          answer: 'werde … haben;',
+        },
+        {
+          number: 'Hiba:',
+          answer: 'wird … geben;',
+        },
+        {
+          number: 'Sami:',
+          answer: 'werden … anbieten;',
+        },
+      ],
+      '12c': [
+        {
+          number: '1',
+          answer: 'werden',
+        },
+        {
+          number: '2',
+          answer: 'wirst',
+        },
+        {
+          number: '3',
+          answer: 'werdet',
+        },
+        {
+          number: '4',
+          answer: 'wird',
+        },
+        {
+          number: '5',
+          answer: 'werden',
         },
       ],
     },
