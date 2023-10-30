@@ -1,4 +1,4 @@
-import { refs } from '../js/refs';
+import { refs } from './refs';
 import { kb } from '../json/kb';
 import { ab } from '../json/ab';
 

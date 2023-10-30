@@ -1,4 +1,4 @@
-export const kb = [
+export const ab = [
   {
     id: '1',
     name: 'Ein neuer Beruf',
