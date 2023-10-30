@@ -4,6 +4,7 @@ import { ab } from '../json/ab';
 
 let BASE = kb;
 let LECTION_ID = 1;
+let TASKS = [];
 let TASK_KEY = '';
 
 window.addEventListener('click', step);
@@ -70,8 +71,8 @@ function renderLections(queriesArray) {
 function renderAufgaben(id) {
   let aufgabenButtons = '';
   const { name, tasks } = BASE[id];
-  const taskKeys = Object.keys(tasks);
-  taskKeys.forEach(task => {
+  TASKS = Object.keys(tasks);
+  TASKS.forEach(task => {
     aufgabenButtons += `<button type="button" class="button button--white icon" data-home data-step="4" data-task='${task}'><span>${task}</span></button>`;
   });
 
