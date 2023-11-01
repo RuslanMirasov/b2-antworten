@@ -42,6 +42,21 @@
       }
     }
   }
+  &.step2 {
+    .button {
+      justify-content: flex-start;
+      span {
+        width: 24px;
+        height: 24px;
+        color: #fff;
+        background: #004e83;
+        border-radius: 40px;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+      }
+    }
+  }
   &.active {
     visibility: visible;
     opacity: 1;
@@ -53,6 +68,8 @@
   display: block;
   background: $white;
   width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
   .antwort {

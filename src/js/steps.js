@@ -62,7 +62,7 @@ function renderLections(queriesArray) {
   let lectionsButtons = '';
   queriesArray.forEach(item => {
     const { id, name } = item;
-    lectionsButtons += `<button type="button" class="button button--white" data-step="3" data-lection="${id}"><span>${id})</span>${name}</button>`;
+    lectionsButtons += `<button type="button" class="button button--white" data-step="3" data-lection="${id}"><span>${id}</span>${name}</button>`;
   });
 
   document.querySelector('.js--lectionsList').innerHTML = lectionsButtons;
