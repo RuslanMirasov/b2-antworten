@@ -827,78 +827,27 @@ export const kb = [
         },
       ],
       '12a': [
-        {
-          number: '1',
-          answer: 'Sami',
-        },
-        {
-          number: '2',
-          answer: 'Hiba',
-        },
-        {
-          number: '3',
-          answer: 'Delali',
-        },
-        {
-          number: '4',
-          answer: 'Sami',
-        },
-        {
-          number: '5',
-          answer: 'Burak',
-        },
-        {
-          number: '6',
-          answer: 'Delali',
-        },
-        {
-          number: '7',
-          answer: 'Burak',
-        },
-        {
-          number: '8',
-          answer: 'Hiba',
-        },
+        { number: '1', answer: 'Sami' },
+        { number: '2', answer: 'Hiba' },
+        { number: '3', answer: 'Delali' },
+        { number: '4', answer: 'Sami' },
+        { number: '5', answer: 'Burak' },
+        { number: '6', answer: 'Delali' },
+        { number: '7', answer: 'Burak' },
+        { number: '8', answer: 'Hiba' },
       ],
       '12b': [
-        {
-          number: 'Burak:',
-          answer: 'wird … eröffnen;',
-        },
-        {
-          number: 'Delali:',
-          answer: 'werde … haben;',
-        },
-        {
-          number: 'Hiba:',
-          answer: 'wird … geben;',
-        },
-        {
-          number: 'Sami:',
-          answer: 'werden … anbieten;',
-        },
+        { number: 'Burak:', answer: 'wird … eröffnen;' },
+        { number: 'Delali:', answer: 'werde … haben;' },
+        { number: 'Hiba:', answer: 'wird … geben;' },
+        { number: 'Sami:', answer: 'werden … anbieten;' },
       ],
       '12c': [
-        {
-          number: '1',
-          answer: 'werden',
-        },
-        {
-          number: '2',
-          answer: 'wirst',
-        },
-        {
-          number: '3',
-          answer: 'werdet',
-        },
-        {
-          number: '4',
-          answer: 'wird',
-        },
-        {
-          number: '5',
-          answer: 'werden',
-        },
+        { number: '1', answer: 'werden' },
+        { number: '2', answer: 'wirst' },
+        { number: '3', answer: 'werdet' },
+        { number: '4', answer: 'wird' },
+        { number: '5', answer: 'werden' },
       ],
     },
   },

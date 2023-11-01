@@ -3,7 +3,7 @@ export const ab = [
     id: '1',
     name: 'Ein neuer Beruf',
     tasks: {
-      '1b': [
+      ' 1b ': [
         {
           number: '1',
           answer:
@@ -308,7 +308,7 @@ export const ab = [
         { number: '2', answer: 'Was finde ich im BIZ?' },
         { number: '3', answer: 'Was bietet das BIZ an?' },
       ],
-      ' 8c  ': [
+      ' 8c ': [
         { number: '1', answer: 'Jobmesse, BIZ, Jobcenter' },
         { number: '2', answer: 'Jobmesse, BIZ, Jobcenter' },
         { number: '3', answer: 'Jobmesse, BIZ, Jobcenter' },
