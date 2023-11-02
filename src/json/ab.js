@@ -1381,108 +1381,779 @@ export const ab = [
     id: '12',
     name: 'Angebote und Verhandlungen',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1 ': [{ number: 'Antworten:', answer: '1c, 2d, 3a, 4e, 5f, 6b' }],
+      ' 2 ': [{ number: 'Antworten:', answer: '1d, 2j, 3g, 4a, 5e, 6i, 7f, 8c, 9b, 10h' }],
+      ' 3 ': [
+        {
+          number: 'Antworten:',
+          answer:
+            'Anfrage, Angebot, Nettopreise, Mehrwertsteuer, Skonto, Lieferung, frei Haus, Allgemeinen Geschäftsbedingungen, Bestellung, Verfügung',
+        },
+      ],
+      ' 4a ': [
+        {
+          number: '1',
+          answer:
+            'Wir haben im September unseren Termin mit Herrn Lorenz, und zwar in der 37. Kalenderwoche, am Dienstag, den 12. September, um 14 Uhr. Unsere Besprechung ist von 14 bis 17 Uhr geplant. Vor 14 Uhr hat Herr Lorenz keine Zeit und nach 17 Uhr hat er schon einen anderen Termin.',
+        },
+        {
+          number: '2',
+          answer:
+            'Unser Betrieb hat seit 2010 seinen Hauptsitz in München. In sechs Monaten werden wir umziehen. Ab November können Sie uns dann in Ingolstadt erreichen. Seit zwei Wochen ist Frau Krause krank. Am Mittwoch wird sie wieder im Büro sein. Seit wann sind Sie in der Firma? Seit letztem Juni. Ab wann haben Sie Ferien? Ab nächstem Montag.',
+        },
+        {
+          number: '3',
+          answer:
+            'Während der Sommermonate hatten viele unserer Kunden Betriebsferien. Während der Arbeit dürfen Sie keine privaten E-Mails schreiben. Wir erwarten Ihre Zahlung innerhalb von sieben Tagen. Außerhalb unserer Öffnungszeiten sind wir mobil erreichbar.',
+        },
+        {
+          number: '4',
+          answer:
+            'Im April war unser Chef für zwei Tage in Paris. Bei seiner Besprechung mit Geschäftspartnern konnte er ein interessantes Angebot unterbreiten. Über Ostern macht er Urlaub.',
+        },
+      ],
+      ' 4b ': [{ number: 'Antworten:', answer: '1 Ab, 2 am, 3 bis, 4 am, 5 über, 6 seit, 7 während, 8 am, 9 um, 10 nach' }],
+      ' 5 ': [
+        { number: '1', answer: 'ab / ZP / Dativ,' },
+        { number: '2', answer: 'nach / ZP / Dativ,' },
+        { number: '3', answer: 'außerhalb / ZR / Genitiv,' },
+        { number: '4', answer: 'vom … bis / ZR / Dativ,' },
+        { number: '5', answer: 'vor / ZR / Dativ,' },
+        { number: '6', answer: 'um / ZP / Akkusativ,' },
+        { number: '7', answer: 'ab / ZP / Dativ,' },
+        { number: '8', answer: 'um / ZR / Akkusativ,' },
+        { number: '9', answer: 'bis / ZP / Dativ,' },
+        { number: '10', answer: 'innerhalb / ZR / Genitiv,' },
+        { number: '11', answer: 'über / ZR / Akkusativ,' },
+        { number: '12', answer: 'seit / ZP / Dativ,' },
+        { number: '13', answer: 'seit / ZR / Dativ,' },
+        { number: '14', answer: 'bei / ZP / Dativ,' },
+        { number: '15', answer: 'während / ZR / Genitiv,' },
+        { number: '16', answer: 'in /ZR/Dativ' },
+      ],
+      ' 6 ': [
+        { number: '1', answer: 'bis nächsten,' },
+        { number: '2', answer: 'Ab dem,' },
+        { number: '3', answer: 'über die,' },
+        { number: '4', answer: 'zum' },
+        { number: '5', answer: 'in /bei einem,' },
+        { number: '6', answer: 'Vom … bis zum,' },
+        { number: '7', answer: 'In den,' },
+        { number: '8', answer: 'innerhalb einer,' },
+        { number: '9', answer: 'außerhalb unserer,' },
+        { number: '10', answer: 'Nach der,' },
+        { number: '11', answer: 'Seit / Nach unserer,' },
+        { number: '12', answer: 'Vor unserem' },
+      ],
+      ' 7 ': [
+        { number: '1', answer: 'höchstens, spätestens, frühestens;' },
+        { number: '2', answer: 'mindestens, spätestens' },
+      ],
+      ' 8a ': [
+        { number: '1', answer: 'Wenn / Falls Sie weitere Fragen haben, dann kontaktieren Sie mich unter 040 - 732 42 49.' },
+        { number: '2', answer: 'Wenn / Falls Sie bis zum 10.12.bestellen, erhalten Sie die Ware noch vor Weihnachten. ' },
+        {
+          number: '3',
+          answer: 'Wenn / Falls Sie Sonderwünsche haben, dann machen wir am besten einen Termin für ein persönliches Gespräch mit unserem Techniker.',
+        },
+        { number: '4', answer: 'Wenn / Falls Sie die Ware per Express senden können, dann sind wir bereit, die Kosten für die Lieferung zu zahlen.' },
+        { number: '5', answer: 'Wenn / Falls Sie nicht bis Ende dieser Woche liefern können, kontaktieren Sie mich bitte unbedingt.' },
+        { number: '6', answer: 'Wenn / Falls Sie unsere Allgemeinen Geschäftsbedingungen lesen möchten, gehen Sie auf unsere Webseite.' },
+      ],
+      ' 8b ': [
+        { number: '1', answer: 'Kontaktieren Sie mich unter 040 - 732 42 49, wenn / falls Sie weitere Fragen haben. ' },
+        { number: '2', answer: 'Sie erhalten die Ware noch vor Weihnachten, wenn/falls Sie bis zum 10.12. bestellen.' },
+        {
+          number: '3',
+          answer: 'Wir machen am besten einen Termin für ein persönliches Gespräch mit unserem Techniker, wenn/falls Sie Sonderwünsche haben. ',
+        },
+        { number: '4', answer: 'Wir sind bereit, die Kosten für die Lieferung zu zahlen, wenn/falls Sie die Ware per Express senden können. ' },
+        { number: '5', answer: 'Kontaktieren Sie mich bitte unbedingt, wenn/falls Sie nicht bis Ende dieser Woche liefern können. ' },
+        { number: '6', answer: 'Gehen Sie auf unsere Webseite, wenn / falls Sie unsere Allgemeinen Geschäftsbedingungen lesen möchten.' },
+      ],
+      ' 9 ': [{ number: 'Antworten:', answer: '1a, 2b, 3b, 4b, 5b, 6c, 7a, 8a, 9b' }],
+      ' 10 ': [{ number: 'Antworten:', answer: '1d, 2i, 3f, 4h, 5a, 6e, 7b, 8j, 9c, 10g' }],
+      ' 11 ': [{ number: 'Antworten:', answer: '1 Verkäufer, Käufers; 2 Käufer, Verkäufers, Verkäufer, Käufer, Käufer; 3 Verkäufer, Käufer' }],
+      ' 12 ': [{ number: 'Antworten:', answer: '1 Erhalt, 2 Konten, 3 Abbuchung, 4 Skonto, 5 Rechnungsbetrag' }],
+      ' 13 ': [{ number: 'Falsch:', answer: '1 übernehmen, 2 vorauszahlen, 3 behalten, 4 überweisen, 5 einzahlen, 6 liefern' }],
+      ' 14 ': [{ number: 'Antworten:', answer: '1c, 2e, 3d, 4a, 5b' }],
+      ' 15 ': [{ number: 'Antworten:', answer: '1b, 2a' }],
+      ' 17 ': [
+        {
+          number: 'Text:',
+          answer:
+            'Sehr geehrte Damen und Herren, wir sind auf der Möbelmesse in Köln auf Sie aufmerksam geworden und interessieren uns für Ihre Büromöbel. Könnten Sie uns bitte einen Katalog mit Preisliste zuschicken? Besonderes Interesse haben wir an umweltfreundlichen Produkten. Vielen Dank im Voraus. Mit freundlichen Grüßen',
+        },
+      ],
+      ' 18b ': [
+        { number: '2', answer: '1. Vertragsabschluss,' },
+        { number: '3', answer: '3. Versandkosten,' },
+        { number: '4', answer: '2. Zahlungsbedingungen,' },
+        { number: '5', answer: '4. Retouren,' },
+        { number: '6', answer: '4. Widerrufsrecht' },
+      ],
+      ' LK ': [
+        {
+          number: 'Reinigungsmittel Alleskönner:',
+          answer: 'Literpreis: [5, 99 €] Rabatt: [Bei 200 Litern: 3% Bei 100 Litern: 2%] Mindestabnahme: [keine]',
+        },
+        {
+          number: 'Reinigungsmittel Steinboden Extra:',
+          answer:
+            'Literpreis: [7, 99 €] Aktionspreis pro Liter: [6,99 €] Mindestabnahme: [100 Liter] Aktionslaufzeit: [noch einen Monat] Probebestellung: [10 Liter] Literpreis: [8,39 €]',
+        },
+      ],
     },
   },
   {
     id: '13',
     name: 'Bestellen und bezahlen',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1c ': [
+        { number: 'Antworten:', answer: '1 begonnen, 2 empfohlen, 3 entschieden, 4 ergänzt, 5 genossen, 6 misstraut, 7 verkauft, 8 zerstört' },
+      ],
+      ' 2 ': [
+        {
+          number: 'ab-:',
+          answer:
+            'abkaufen, abnehmen, abstellen, abgehen, abschauen, abgeben, abfahren, abpassen, abbringen, abmachen, abdecken, abschalten, abfallen, abschreiben, abschmeißen, abfassen, abbrechen, abspielen',
+        },
+        {
+          number: 'an-:',
+          answer:
+            'ankaufen, annehmen, anstellen, ankommen, angehen, anschauen, angeben, anfahren, anrufen, anpassen, anbringen, anmachen, anschalten, anschreiben, anschmeißen, anfassen, anbrechen, anspielen',
+        },
+        {
+          number: 'auf-:',
+          answer:
+            'aufkaufen, aufnehmen, aufstellen, aufgehen, aufschauen, aufgeben, auffahren, aufrufen, aufpassen, aufmachen, aufdecken, auffallen, aufschreiben, auffassen, aufbrechen, aufbereiten, aufspielen',
+        },
+        {
+          number: 'aus-:',
+          answer:
+            'ausdenken, ausnehmen, ausstellen, auskommen, ausgehen, ausschauen, ausgeben, ausrufen, ausmachen, ausschalten, ausfallen, ausbrechen, ausspielen',
+        },
+        {
+          number: 'ein-:',
+          answer:
+            'einkaufen, einnehmen, einstellen, eingehen, eingeben, einfahren, einpassen, einbringen, einmachen, eindecken, einschalten, einfallen, einbrechen, einspielen',
+        },
+        {
+          number: 'her-:',
+          answer: ' hernehmen, herstellen, herkommen, hergehen, herschauen, hergeben, herfahren, herrufen, herbringen, herfallen, herspielen',
+        },
+        {
+          number: 'hin-:',
+          answer:
+            ' hindenken, hinnehmen, hinstellen, hinkommen, hingehen, hinschauen, hingeben, hinfahren, hinpassen, hinbringen, hinmachen, hinfallen, hinschreiben, hinschmeißen, hinfassen',
+        },
+        { number: 'los-:', answer: ' loskaufen, loskommen, losgehen, losgeben, losfahren, losmachen, losbrechen' },
+        {
+          number: 'mit-:',
+          answer: ' mitdenken, mitnehmen, mitkommen, mitgehen, mitgeben, mitfahren, mitbringen, mitmachen, mitschreiben, mitspielen',
+        },
+        {
+          number: 'nach-:',
+          answer:
+            'nachkaufen, nachdenken, nachstellen, nachkommen, nachgehen, nachschauen, nachgeben, nachfahren, nachrufen, nachmachen, nachbereiten, nachspielen',
+        },
+        {
+          number: 'vor-:',
+          answer:
+            'vordenken, vornehmen, vorstellen, vorkommen, vorgehen, vorgeben, vorfahren, vorbringen, vormachen, vorschalten, vorfallen, vorschreiben, vorfassen, vorbereiten, vorspielen',
+        },
+        {
+          number: 'weg-:',
+          answer:
+            ' wegkaufen, wegdenken, wegnehmen, wegstellen, wegkommen, weggehen, wegschauen, weggeben, wegfahren, wegbringen, wegmachen, wegfallen, wegschmeißen, wegbrechen',
+        },
+        {
+          number: 'zu-:',
+          answer:
+            'zukaufen, zunehmen, zustellen, zuschauen, zugeben, zurufen, zupassen, zumachen, zudecken, zuschalten, zufallen, zuschmeißen, zufassen, zubereiten, zuspielen',
+        },
+        {
+          number: 'zurück-:',
+          answer:
+            'zurückkaufen, zurückdenken, zurücknehmen, zurückstellen, zurückkommen, zurückgehen, zurückschauen, zurückgeben, zurückfahren, zurückrufen, zurückpassen, zurückbringen, zurückschalten, zurückfallen, zurückschreiben, zurückspielen',
+        },
+      ],
+      ' 3c ': [
+        { number: '1', answer: 'Unsere Bestellung vom …,' },
+        { number: '2', answer: 'Fehlerhafte Rechnung,' },
+        { number: '3', answer: 'Mangelhafte Lieferung,' },
+        { number: '4', answer: 'Bitte um Zusendung von Katalog,' },
+        { number: '5', answer: 'Fragen zum Versand,' },
+        { number: '6', answer: 'Bitte um schnellstmöglichen Versand' },
+      ],
+      ' 5 ': [{ number: 'Antworten:', answer: '1b, 2c, 3f, 4l, 5h, 6k, 7d, 8i, 9j, 10e, 11p, 12g, 13q, 14r, 15m, 16a, 17n, 18o' }],
+      ' 6 ': [
+        { number: 'Anrufer:', answer: '1, 2, 5, 7, 8, 11, 12, 13, 14, 15, 16;' },
+        { number: 'Angerufener:', answer: ' 3, 4, 6, 9, 10, 14, 15, 17, 18' },
+      ],
+      ' 7 ': [
+        { number: '1', answer: 'GESAMTPREIS' },
+        { number: '2', answer: 'BESTANDSKUNDE' },
+        { number: '3', answer: 'MEHRWERTSTEUER' },
+        { number: '4', answer: 'EINZELPREIS' },
+        { number: '5', answer: 'BANKUEBERWEISUNG' },
+        { number: '6', answer: 'MENGE' },
+        { number: '7', answer: 'EMPFÄNGER' },
+        { number: 'Lösungswort:', answer: 'MAHNUNG' },
+      ],
+      ' 8a ': [{ number: 'Antworten:', answer: '1d, 2e, 3a, 4b, 5f, 6c' }],
+      ' 8b ': [
+        { number: '1', answer: 'nicht nur … sondern auch,' },
+        { number: '2', answer: 'sowohl … als auch,' },
+        { number: '3', answer: 'weder … noch,' },
+        { number: '4', answer: 'je … desto,' },
+        { number: '5', answer: 'sowohl … als auch,' },
+        { number: '6', answer: 'Zwar … aber,' },
+        { number: '7', answer: 'weder… noch,' },
+        { number: '8', answer: 'nicht nur … sondern auch' },
+      ],
+      ' 9a ': [
+        {
+          number: 'Antworten:',
+          answer: '1 kostet, 2 beträgt, 3 Summe, 4 zuzüglich, 5 Betrag, 6 Gesamtpreis, 7 Zahlung, 8 berechnet, 9 Preis, 10 insgesamt',
+        },
+      ],
+      ' 9b ': [
+        { number: '1', answer: '23.270 - 32 = 23.238' },
+        { number: '2', answer: '19% von 480€ = 91,20€' },
+        { number: '3', answer: '¼ + ¼ = ½' },
+        { number: '4', answer: '17,23 + 0,3 = 17,53' },
+        { number: '5', answer: '25% von 389 = 97,25' },
+        { number: '6', answer: '9136 : 4 = 2284' },
+        { number: '7', answer: '6,37€ + 0,72€ = 7,09€' },
+        { number: '8', answer: '⅔ = 0,66' },
+        { number: '9', answer: '127.352 - 28 = 127.324' },
+      ],
+      ' 10 ': [{ number: 'Antworten:', answer: '1 Kreditkarte, 2 Onlinebezahldienst, 3 Lastschrift, 4 Rechnung und Banküberweisung' }],
+      ' 11 ': [
+        { number: '1', answer: 'die Person, die das Geld erhält' },
+        { number: '2', answer: 'die Kontonummer' },
+        { number: '3', answer: 'die Nummer der Bank' },
+        { number: '4', answer: 'die Summe, die überwiesen wird' },
+        { number: '5', answer: 'eine Zahl, die dem Auftrag zugeordnet wird' },
+        { number: '6', answer: 'der Grund für die Überweisung' },
+        { number: '7', answer: 'die Person, die die Überweisung tätigt' },
+      ],
+      ' 12 ': [{ number: 'Antworten:', answer: '1 richtig, 2 falsch, 3 falsch, 4 richtig, 5 falsch' }],
+      ' 13a ': [
+        { number: '1', answer: 'Der Mann, der / den / dem / dessen,' },
+        { number: '2', answer: 'Die Frau, die / die / der / deren,' },
+        { number: '3', answer: 'Das Kind, das / das / dem / dessen,' },
+        { number: '4', answer: 'Die Leute, die / die / denen / deren' },
+      ],
+      ' 13b ': [{ number: 'Antworten:', answer: '1 die, 2 der, 3 dessen, 4 das, 5 die, 6 denen, 7 deren, 8 der' }],
+      ' 13c ': [
+        { number: '1', answer: 'Das Geld, das ein Arbeitnehmer für seine Arbeit bekommt, wird als Lohn oder Gehalt bezeichnet.' },
+        { number: '2', answer: 'Das Geld, das vom Arbeitgeber ausgezahlt wird, wird auf das Konto des Arbeitnehmers überwiesen. ' },
+        { number: '3', answer: 'Der Lohn, der im Vertrag vereinbart wird, heißt Bruttolohn. ' },
+        { number: '4', answer: 'Der Lohn, der nach Steuern und Sozialabgaben übrigbleibt, heißt Nettolohn. ' },
+        { number: '5', answer: 'Die Fixkosten, die für Miete etc.bezahlt werden müssen, sind am höchsten. ' },
+        { number: '6', answer: 'Die Ausgaben für Kleidung, Freizeit und Urlaub, die nicht jeden Monat anfallen, können variieren. ' },
+        { number: '7', answer: 'Das Geld, das am Monatsende übrigbleibt, wird auf ein Sparkonto überwiesen.' },
+      ],
+      ' 14a ': [
+        { number: 'Zahlungserinnerung:', answer: 'C, Erste' },
+        { number: 'Mahnung:', answer: 'A, Zweite' },
+        { number: 'Mahnung:', answer: 'D, Dritte' },
+        { number: 'Mahnung:', answer: 'B' },
+      ],
+      ' 14b ': [
+        { number: 'Zahlungserinnerung:', answer: 'so bald wie möglich, Erste' },
+        { number: 'Mahnung:', answer: 'zeitnah, Zweite' },
+        { number: 'Mahnung:', answer: 'schnellstmöglich, Dritte' },
+        { number: 'Mahnung:', answer: 'Unverzüglich' },
+      ],
+      ' 14c ': [
+        { number: 'formell:', answer: 'baldmöglich, binnen einer Woche, auf schnellstem Wege, umgehend, dringend, zum baldmöglichsten Zeitpunkt;' },
+        { number: 'informell:', answer: 'sofort, schnell, auf der Stelle, dalli, augenblicklich' },
+      ],
+      ' 14d ': [
+        { number: '1', answer: 'Wir beziehen uns auf unser Schreiben vom 21.6.20… .' },
+        { number: '2', answer: 'Hiermit weisen wir auf die offene Rechnung vom 14.7.20… hin. ' },
+        { number: '3', answer: 'Leider ist der offene Betrag noch nicht auf unserem Konto eingegangen.' },
+        { number: '4', answer: 'Die Zahlung über 38, 50 € war am 30.8.20… fällig. ' },
+        { number: '5', answer: 'Wir bitten Sie, die offene Rechnung zeitnah zu begleichen. ' },
+        { number: '6', answer: 'Hiermit fordern wir Sie auf, den fälligen Betrag umgehend zu überweisen.' },
+        { number: '7', answer: 'Ansonsten werden wir unsere Forderungen gerichtlich geltend machen.' },
+        { number: '8', answer: 'Sie haben überwiesen ? Dann betrachten Sie dieses Schreiben als gegenstandslos.' },
+        { number: '9', answer: 'Bitte kommen Sie Ihren Zahlungsverpflichtungen unverzüglich nach.' },
+        { number: '10', answer: 'Wir erwarten die Zahlung bis zum 18.2.20… .' },
+      ],
+      ' LK ': [
+        { number: '1', answer: 'Gespräch 1) a, g; Gespräch 2) d, b; Gespräch 3) c, f; Gespräch 4) e, h' },
+        {
+          number: '2',
+          answer:
+            'per Rechnung [Vorteile: Sicherheit für den Käufer; Nachteile: 2 Arbeitsschritte für den Käufer nötig;] per Lastschrif [Vorteile: Käufer kann die Ware zuerst prüfen; Nachteile: Käufer muss dem Verkäufer die Bankdaten geben;] per Kreditkarte [Vorteile: schnell ; Nachteile: Gebühren;] Paypal [Vorteile: Käufer muss keine Bankdaten angeben; Nachteile: bei Widerspruch muss Käufer den Online-Dienst kontaktieren;]',
+        },
+      ],
     },
   },
   {
     id: '14',
     name: 'Konflikte und Beschwerden',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1 ': [
+        { number: '1', answer: 'Entschuldigung, ich habe Sie nicht richtig verstanden.' },
+        { number: '2', answer: 'Leider haben wir heute keinen frischen Saft. ' },
+        { number: '3', answer: 'Bitte lassen Sie mich mit meinem Vorgesetzten sprechen.' },
+        { number: '4', answer: 'Ich versichere Ihnen, dass dies eine Ausnahme ist.' },
+        { number: '5', answer: 'Ich verstehe Sie voll und ganz. ' },
+        { number: '6', answer: 'Sie haben vollkommen recht. ' },
+        { number: '7', answer: 'Das ist wohl ein Missverständnis.' },
+        { number: '8', answer: 'Ich werde Ihre Beschwerde weitergeben.' },
+      ],
+      ' 2 ': [
+        { number: '1', answer: 'Dimitra sagt, dass sie gerne einen Obstsalat hätte.' },
+        { number: '2', answer: 'Malaika erklärt, dass ihr Lieferant heute leider kein frisches Obst geliefert hat.' },
+        { number: '3', answer: 'Dimitra behauptet, dass im Internet steht, dass das Hotel immer frisches Obst anbietet. ' },
+        { number: '4', answer: 'Malaika fragt, ob Dimitra vielleicht ein Müsli statt frischem Obst möchte.' },
+        { number: '5', answer: 'Dimitra stellt fest, dass der Service in diesem Hotel nicht so gut ist, wie sie gedacht hat. ' },
+        {
+          number: '6',
+          answer: 'Frau Aruba erzählt, dass ihr das in ihrem letzten Urlaub auch passiert ist und dass es nie das gab, was sie wollte.',
+        },
+      ],
+      ' 3a ': [
+        { number: 'ich', answer: 'werde müsse könne sei' },
+        { number: 'du', answer: 'werdest müssest könnest sei(e)st' },
+        { number: 'er/sie/es', answer: 'werde müsse könne sei' },
+        { number: 'wir', answer: 'werden müssen können seien' },
+        { number: 'ihr', answer: 'werdet müsset könnet sei(e)t' },
+        { number: 'sie/ Sie', answer: 'werden müssen können seien ' },
+      ],
+      ' 3b ': [
+        {
+          number: 'Antworten:',
+          answer:
+            'Der Gast erzählt, dass der Urlaub auf Mallorca eine einzige Katastrophe sei. Der Service im Hotel sei schlecht, denn die Angestellten könnten kein Deutsch. Außerdem müsse man früh aufstehen, um eine Liege zu reservieren. Es sei viel zu heiß und man werde ganz faul. So könne man die Ausflüge nicht genießen und müsse den ganzen Tag an der Bar bleiben. Er werde seinen Freunden diese Reise nicht empfehlen.',
+        },
+      ],
+      ' 5a ': [{ number: 'Antworten:', answer: '1 müssten, 2 sollten, 3 könnten, 4 würden, 5 dürften, 6 hätten, 7 hätte, 8 wäre' }],
+      ' 5b ': [
+        { number: '1', answer: 'Man sollte es dem Kunden leicht machen, sich zu beschweren.' },
+        { number: '2', answer: 'Vielen Leute sagen auch, man dürfte den Kunden am Telefon nicht warten lassen.' },
+        { number: '3', answer: 'Der größte Fehler bei Beschwerden wäre es, nicht ehrlich zu sein.' },
+        { number: '4', answer: 'Auch wenn man sich gerne rechtfertigen würde, wäre das ein Fehler.' },
+        { number: '5', answer: 'Man sollte immer eine Lösung anbieten.' },
+        { number: '6', answer: 'Allerdings könnte man den Kunden auch fragen, was er von der Firma erwartet.' },
+        { number: '7', answer: 'Der richtige Umgang mit Beschwerden müsste Teil der Unternehmenskultur sein.' },
+      ],
+      ' 6 ': [{ number: 'Antworten:', answer: '1 Missverständnis, 2 Vorfall, 3 Ausnahme, 4 Unannehmlichkeiten, 5 Vorwurf, 6 Enttäuschung' }],
+      ' 7a ': [
+        { number: '1', answer: 'mich, beschweren;' },
+        { number: '2', answer: 'Entschuldigung, entschuldigen;' },
+        { number: '3', answer: 'ärgern, mich;' },
+        { number: '4', answer: 'Missverständnis, missverstanden;' },
+        { number: '5', answer: 'wiedergutmachen;' },
+        { number: '6', answer: 'Vorwurf, vorwerfen;' },
+        { number: '7', answer: 'verzeihen, verzeihen;' },
+        { number: '8', answer: 'bedauere' },
+      ],
+      ' 7b ': [
+        { number: 'Kunde:', answer: '1, 3, 6;' },
+        { number: 'Anbieter:', answer: '2, 4, 5, 7, 8' },
+      ],
+      ' 7c ': [{ number: 'Antworten:', answer: '1 vorschlagen, 2 zeigen, 3 entschuldigen 4 geben, 5 machen, 6 klären' }],
+      ' 7d ': [
+        { number: 'Antworten:', answer: '1 bedauern, 2 leider, 3 das Missverständnis, 4 entschuldigen, 5 die Zufriedenheit, 6 wiedergutzumachen' },
+      ],
+      ' 8 ': [{ number: 'Antworten:', answer: '1e, 2c, 3f, 4b, 5a, 6g, 7h, 8d' }],
+      ' 9 ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1 gerne, 2 Also, 3 leider, 4 tut mir leid, 5 entschuldigen, 6 sicherlich, 7 Missverständnis, 8 vorkommen, 9 recht, 10 Vorfall, 11 Entschädigung, 12 Nein',
+        },
+      ],
+      ' 11 ': [{ number: 'Antworten:', answer: '1e, 2a, 3f' }],
+      ' 12a ': [{ number: 'Antworten:', answer: '1 Aufgrund, 2 Wegen, 3 Angesichts, 4 Dank' }],
+      ' 12b ': [
+        {
+          number: 'Antworten:',
+          answer:
+            'Angesichts der vielen Beschwerden im letzten Jahr hat die Geschäftsleitung beschlossen, alle Mitarbeiter zum Thema "Beschwerdemanagement" zu schulen. Aufgrund der schwierigen Situation wäre es zwar besser, alle Mitarbeiter in eine dreitägige Schulung zu schicken, aber mangels Zeit kann nur ein Online-Seminar angeboten werden. Dank einer neuen Schulungssoftware sollte das aber kein Problem sein. Wegen des geringeren zeitlichen und finanziellen Aufwands ist ein solches Seminar eine gute Alternative zu Präsenzschulungen.',
+        },
+      ],
+      ' 13a ': [
+        { number: '1', answer: 'Ein Mitarbeiter in jeder Abteilung ist bestimmt worden, um Fragen der Kunden zu beantworten. ' },
+        { number: '2', answer: 'Die Überstunden sind reduziert worden. ' },
+        { number: '3', answer: 'Die Pausenzeiten sind neu geregelt worden. ' },
+        { number: '4', answer: 'Die Fragen der Kunden sind zufriedenstellend beantwortet worden.' },
+        { number: '5', answer: 'Der Pausenraum ist nicht ordentlich gehalten worden.' },
+        { number: '6', answer: 'Die Anzahl der Überstunden ist gerecht auf die Mitarbeiter aufgeteilt worden.' },
+        { number: '7', answer: 'Der Schichtplan ist geändert worden.' },
+        { number: '8', answer: 'Mehr Personal ist eingestellt worden.' },
+      ],
+      ' 13b ': [
+        { number: '1', answer: 'Sind die Koffer gepackt worden ? - Ja, die Koffer sind gepackt worden. ' },
+        { number: '2', answer: 'Sind die Blumen gegossen worden ? - Nein, die Blumen sind nicht gegossen worden. ' },
+        {
+          number: '3',
+          answer: 'Sind die Schlüssel an den Nachbarn übergeben worden? - Nein, die Schlüssel sind nicht an den Nachbarn übergeben worden.',
+        },
+        { number: '4', answer: 'Ist das Auto vollgetankt worden ? - Ja, das Auto ist vollgetankt worden.' },
+        { number: '5', answer: 'Ist das Licht ausgemacht worden ? - Ja, das Licht ist ausgemacht worden.' },
+        { number: '6', answer: 'Ist die Alarmanlage eingeschaltet worden ? - Nein, die Alarmanlage ist nicht eingeschaltet worden.' },
+        { number: '7', answer: 'Ist die Wohnung geputzt worden? - Ja, die Wohnung ist geputzt worden.' },
+        { number: '8', answer: 'Sind die Zahnbürsten gekauft worden ? - Ja, die Zahnbürsten sind gekauft worden. ' },
+        { number: '9', answer: 'Ist das Essen eingepackt worden? - Nein, das Essen ist nicht eingepackt worden.' },
+        { number: '10', answer: 'Sind die Fenster geschlossen worden? Ja, die Fenster sind geschlossen worden.' },
+      ],
+      ' 14 ': [
+        { number: 'Antworten:', answer: '1 angeschaut, 2 wurde gefunden, 3 wurden … verlängert, 4 wurde … geschrieben, 5 wurden … reduziert' },
+      ],
+      ' 15a ': [
+        { number: 'Antworten:', answer: '1 leider, 2 passiert, 3 gestört, 4 zum Beispiel, 5 verstehen, 6 wäre es denn, 7 Kompromiss, 8 auch sagen' },
+      ],
+      ' 16a ': [{ number: 'Antworten:', answer: '1a, 2a, 3a, 4b' }],
+      ' 16b ': [
+        { number: '1', answer: 'Die Beschwerde ist bei der Hotline eingegangen. ' },
+        { number: '2', answer: 'Der Kunde ist mit der Antwort nicht zufriedengestellt.' },
+        { number: '3', answer: 'Die Anfrage ist vom Mitarbeiter schon bearbeitet.' },
+      ],
+      ' 17 ': [
+        { number: '1', answer: '1 hätte 2 gekauft, 3 gehabt' },
+        { number: '2', answer: '1 gekauft 2 gewusst' },
+        { number: '3', answer: '1 wäre 2 gegangen, 3 gereinigt' },
+        { number: '4', answer: '1 gewusst 2 hätte' },
+      ],
+      ' LK ': [
+        { number: '1', answer: 'Die Schrauben zum bestellten Schrank fehlen. Er möchte einen Rückruf und eine Lösung.' },
+        { number: '2', answer: '1 falsch, 2 richtig, 3 falsch ' },
+      ],
     },
   },
   {
     id: '15',
     name: 'Eine Besprechung planen',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1a ': [{ number: 'Antworten:', answer: '1) am, 2) um, 3) von … bis, 4) nach, 5) nach, 6) seit, 7) bis, 8) für, 9) nach, 10) vom' }],
+      ' 1b ': [{ number: 'Korrekt:', answer: '1) um, um; 2) Vom … an; 3) über; 4) seit; 5) nach; 6) Im' }],
+      ' 2a ': [{ number: 'Antworten:', answer: '1er, 2en, 3e, 4er, 5en, 6er, 7en, 8en, 9em, 10er, 11en' }],
+      ' 2b ': [{ number: 'Antworten:', answer: '1) Trotz, 2) für, 3) von, 4) aus, 5) außer' }],
+      ' 3a  ': [{ number: 'Antworten:', answer: '1b, 2d, 3c, 4a' }],
+      ' 3b ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) die Kalenderwoche, 2) das Protokoll, 3) der Teilnehmer, 4) die Tagesordnung, 5) das Meeting, 6) die Teilnahme, 7) die Maßnahme, 8) die Besprechung',
+        },
+      ],
+      ' 6a ': [
+        {
+          number: 'Antworten:',
+          answer: '1) am, 2) Teilnehmer, 3) der, 4) Rückblick, 5) Kooperation, 6) im, 7) Kürzungen, 8) Prognosen, 9) Planung, 10) Sonstiges',
+        },
+      ],
+      ' 6c ': [{ number: 'TOP 5:', answer: 'Kürzungen im Budget' }],
+      ' 7a ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) kleiner, am kleinsten, 2) älter, am ältesten, 3) mehr, am meisten, 4) höher, am höchsten, 5) teurer, am teuersten, 6) besser, am besten, 7) praktischer, am praktischsten, 8) klüger, am klügsten, 9) lieber, am liebsten, 1)0 niedriger, am niedrigsten',
+        },
+      ],
+      ' 7b ': [
+        { number: 'Antworten:', answer: '1) am wenigsten, 2) am wichtigsten, 3) am liebsten, 4) am häufigsten, 5) am meisten, 6) am niedrigsten' },
+      ],
+      ' 8a ': [
+        { number: '1', answer: 'Die meisten Italiener machen Urlaub in Italien. ' },
+        { number: '2', answer: 'Knapp die Hälfte der Franzosen mögen keinen Weißwein. ' },
+        { number: '3', answer: 'In der Schweiz verbringt man vor dem Fernseher halb so viel Zeit wie in Luxemburg. ' },
+        { number: '4', answer: 'Ungefähr die Hälfte der Schweden sprechen Englisch. ' },
+        { number: '5', answer: 'Ein Viertel aller Spanier haben keine Katze. ' },
+        { number: '6', answer: 'In England gibt es doppelt so viel Regentage wie in Portugal. ' },
+        { number: '7', answer: 'Die Mehrheit der Deutschen isst gerne Kartoffeln.' },
+        { number: '8', answer: 'In Norwegen nutzen genauso viele Jugendliche wie in Belgien Facebook.' },
+      ],
+      ' 9 ': [{ number: 'Antworten:', answer: '1c, 2f, 3d, 4e, 5a, 6b(auch 3a und 5d)' }],
+      ' 10a ': [
+        { number: '1', answer: 'Ich werde eine Fortbildung im IT- Bereich machen.' },
+        { number: '2', answer: 'Wirst du demnächst befördert werden? ' },
+        { number: '3', answer: 'Mein Terminkalender wird dieses Jahr sehr voll sein.' },
+        { number: '4', answer: 'Frau Hintner wird den Termin mit Ihnen persönlich ausmachen.' },
+        { number: '5', answer: 'Dieses Jahr wird es voraussichtlich sehr viel schneien.' },
+        { number: '6', answer: 'Meine neuen Kollegen und ich, wir werden ein gutes Team sein.' },
+        { number: '7', answer: 'Ihr werdet eine Einigung finden - da bin ich sicher! ' },
+        { number: '8', answer: 'Einige Mitarbeiter werden Ihre Teilnahme am Meeting absagen.' },
+      ],
+      ' 10b ': [{ number: 'Antworten:', answer: '1b, f; 2c, e; 3a, d; 4c, e; 5b, f; 6a, d' }],
+      ' 11 ': [
+        { number: 'A', answer: 'Karriere machen,' },
+        { number: 'B', answer: 'sich weiterentwickeln,' },
+        { number: 'C', answer: 'sich bewerben,' },
+        { number: 'D', answer: 'ein Zusatzstudium machen,' },
+        { number: 'E', answer: 'Erfahrungen sammeln,' },
+        { number: 'F', answer: 'sich spezialisieren,' },
+        { number: 'G', answer: 'sich weiterbilden' },
+      ],
+      ' 12a ': [{ number: 'Antworten:', answer: '1j, 2c, 3g, 4i, 5f, 6a, 7d, 8b, 9h, 10e' }],
+      ' 12b ': [
+        { number: '1', answer: 'Am 24. März wurde unsere Sitzung zur Eröffnung der neuen Zweigstelle abgehalten. ' },
+        { number: '2', answer: 'Die Liste der Teilnehmer finden Sie im Anhang. ' },
+        { number: '3', answer: 'Es wurde entschieden, die Zweigstelle in Hamburg zu eröffnen.' },
+        { number: '4', answer: 'Vor der Eröffnung müssen einige wichtige Maßnahmen ergriffen werden.' },
+        { number: '5', answer: 'Die Aufgaben werden gleichmäßig auf alle Mitarbeiter verteilt. ' },
+        { number: '6', answer: 'Alle Aufgaben müssen bis Ende Mai erledigt sein.' },
+      ],
+      ' LK ': [
+        { number: '1', answer: '1 Dienstag um 11 Uhr, 2 Konferenzraum, 3 Frau Heller, 4 Frau Heller' },
+        { number: '2', answer: '1 falsch, 2 richtig, 3 richtig  ' },
+      ],
     },
   },
   {
     id: '16',
     name: 'Bestimmungen am Arbeitsplatz',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1a ': [
+        { number: '1', answer: 'BETRIEBSANLEITUNG' },
+        { number: '2', answer: 'NOTEBOOK' },
+        { number: '3', answer: 'SPEICHERKARTE' },
+        { number: '4', answer: 'AUSSCHALTEN' },
+        { number: '5', answer: 'AUFLADEN' },
+        { number: '6', answer: 'BETRIEBSANZEIGE' },
+        { number: '7', answer: 'TOUCHSCREEN' },
+        { number: '8', answer: 'SMARTPHONE' },
+        { number: 'Lösungswort:', answer: 'AKKUFACH' },
+      ],
+      ' 1b ': [
+        { number: '1', answer: 'Lies bitte die Bedienungsanleitung. (Bitte lies …)' },
+        { number: '2', answer: 'Leg(e) bitte den Akku ein. ' },
+        { number: '3', answer: 'Reparier(e) bitte das Gerät.' },
+        { number: '4', answer: 'Lad(e) mir bitte eine App runter. ' },
+        { number: '5', answer: 'Hilf ihr bitte beim Download. ' },
+        { number: '6', answer: 'Besorg(e) mir bitte eine neue Speicherkarte.' },
+      ],
+      ' 1c ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1 die Abdeckung, 2) das Cover, 3) der Akku, 4) einrasten, 5) der Anschluss, 6) der Kontakt, 7) das Ladegerät, 8) das Display, 9) die PIN, 10) die Anzeige, 11) das Symbol, 12) die SIM, 13) navigieren, 14) einrichten',
+        },
+      ],
+      ' 2a ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) Kamera, 2) Lautsprecher 2, 3) Betriebsanzeige, 4) Touchscreen/Display, 5) Ein-/Aus- bzw. Stand-by-Taste, 6) Mikrofon/Lautsprecher 1, 7) Micro-USB-Anschluss, 8) Ohrhörer-Anschluss, 9) Lautstärke lauter/leiser, 10) Stummtaste an/aus',
+        },
+      ],
+      ' 2b ': [{ number: 'Antworten:', answer: '1f, 2c, 3h, 4g, 5b, 6a, 7e, 8d, 9j, 10i' }],
+      ' 2c ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) ein Gerät einschalten, 2) eine Datei runterladen(herunterladen), 3) das rückseitige Cover einsetzen, 4) das Ladegerät herausziehen, 5) eine Datei zumachen, 6) ein Gerät auf laut schalten',
+        },
+      ],
+      ' 3a ': [{ number: 'Beispiel:', answer: '4 - 5 - 8 - 3 - 2 - 6 - 1 - 7(Papier auffüllen z.B.auch gleich zu Beginn)' }],
+      ' 3c ': [
+        { number: 'Antworten:', answer: '1 Schaltet, 2 wartet, 3 Legt, 4 Wählt, 5 Stellt, 6 Gebt … an, 7 Wählt, 8 Füllt … auf, 9 Drückt, 10 Nehmt' },
+      ],
+      ' 4a ': [
+        { number: '1', answer: 'Erlebt das neuste Smartphone. ' },
+        { number: '2', answer: 'Testen Sie unsere Flatscreen - Fernseher diesen Monat kostenlos. ' },
+        { number: '3', answer: 'Gewinn eines von 100 Tablets. ' },
+        { number: '4', answer: 'Erhaltet eine kostenlose Einführung in das aktuelle PC - Programm.' },
+      ],
+      ' 4b ': [
+        { number: 'löschen:', answer: 'lösch(e), löscht, löschen Sie;' },
+        { number: 'speichern:', answer: 'speich(e)r(e), speichert, speichern Sie;' },
+        { number: 'wiederholen:', answer: 'wiederhol(e), wiederholt, wiederholen Sie;' },
+        { number: 'aktivieren:', answer: 'aktivier(e), aktiviert, aktivieren Sie;' },
+        { number: 'klicken:', answer: 'klick(e), klickt, klicken Sie' },
+      ],
+      ' 5a ': [
+        { number: '1', answer: 'Tür: öffnen, aufschließen, abschließen, zumachen;' },
+        { number: '2', answer: 'Licht: anmachen, ausschalten;' },
+        { number: '3', answer: 'Kalender: öffnen, ausdrucken, notieren;' },
+        { number: '4', answer: 'Fenster: öffnen, aufschließen, abschließen, zumachen;' },
+        { number: '5', answer: 'Drucker: anmachen, hochfahren, anschalten, ausschalten, ausdrucken;' },
+        { number: '6', answer: 'Telefon: abhören(Anrufbeantworter), wählen;' },
+        { number: '7', answer: 'PC(Bildschirm): anmachen, hochfahren, anschalten;' },
+        { number: '8', answer: 'Tasse Kaffee: trinken, machen' },
+      ],
+      ' 5b ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) Tür aufschließen, 2) Licht anschalten, 3) alle Fenster öffnen, 4) Kopierer anschalten, 5) Anrufbeantworter abhören, 6) Computer hochfahren, 7) Terminplan ausdrucken, 8) Kaffee machen',
+        },
+      ],
+      ' 6 ': [
+        {
+          number: 'trennbar:',
+          answer:
+            ' auswählen, hinzufügen, hochladen, aussuchen, aufrufen, eintragen, abtippen, auflegen, abwarten, hingehen, eingeben, angeben, wegklicken, ablegen, abspeichern, anschauen, anrufen, abdrücken, herunterladen, heranzoomen. ',
+        },
+        { number: 'nicht trennbar:', answer: ' bestätigen, bestimmen, wiederholen, deaktivieren, erhalten, entladen, entnehmen' },
+      ],
+      ' 7 ': [{ number: 'Antworten:', answer: '1b, 2a, 3a, 4a' }],
+      ' 8a ': [{ number: 'Antworten:', answer: '1) zu beachten, 2) einzuhalten, 3) zu beantragen, 4) abzubauen, 5) zu nehmen, 6) festzulegen' }],
+      ' 8b ': [{ number: 'Antworten:', answer: '1) krankzumelden, 2) einzugehen, 3) mitzuteilen, 4) zu befolgen, 5) einzureichen, 6) einzuhalten' }],
+      ' 9a ': [
+        {
+          number: 'Antworten:',
+          answer: '1 Kellner /in, Restaurantfachkraft; 2 Lagerist /in (Staplerfahrer /in); 3 Friseur /in; 4 Reinigungsfachkraft',
+        },
+      ],
+      ' 9b ': [
+        { number: '1', answer: 'Hemd / Bluse, schwarze Hose, Fliege, Bistroschürze;' },
+        { number: '2', answer: 'Schutzhelm, Warnweste, Handschuhe, Arbeitshose, Arbeitsoverall, Sicherheitsschuhe;' },
+        { number: '3', answer: 'Friseurschürze, Friseurwerkzeugtasche;' },
+        { number: '4', answer: 'Kittel, Gummihandschuhe' },
+      ],
+      ' 9c ': [{ number: 'Falsch:', answer: 'Sicherheitsweste bei Fachkraft Großmetzgerei und Arztkittel bei Krankenschwester / Krankenpfleger' }],
+      ' 10a ': [
+        { number: '1', answer: 'Man kann hier Hilfe bekommen.' },
+        { number: '2', answer: 'Man darf kein Feuer machen. ' },
+        { number: '3', answer: 'Man soll den Sicherheitsgurt anlegen. ' },
+        { number: '4', answer: 'Man soll auf giftige Stoffe achten. ' },
+        { number: '5', answer: 'Man darf sein Handy nicht benutzen. ' },
+        { number: '6', answer: 'Man soll seine Hände waschen.' },
+      ],
+      ' 10b ': [{ number: 'Antworten:', answer: '1d, 2a, 3e, 4b, 5c' }],
+      ' 10c ': [{ number: 'Falsch:', answer: ' 1 anordnen, 2 begehen, 3 einhalten, 4 werfen, 5 deaktivieren' }],
+      ' 11a ': [{ number: 'Antworten:', answer: '4, 7, 1, 10, 3, 6, 9, 2, 8, 5' }],
+      ' 11b ': [
+        { number: '1', answer: 'Zuerst schaut man, ob das Unfallopfer ansprechbar ist.' },
+        { number: '2', answer: 'Dann ruft man den Rettungswagen, Notarzt oder den betrieblichen Sanitäter.' },
+        { number: '3', answer: 'Anschließend macht man die Erstversorgung der Verletzungen(z.B.Wunden). ' },
+        { number: '4', answer: 'Zum Schluss bleibt man beim Unfallopfer, bis professionelle Hilfe eintrifft.' },
+      ],
+      ' 12a ': [{ number: 'Antworten:', answer: 'Oben links: 4. Oben rechts: 1. Mitte links: 3. Mitte rechts: 5. unten links: 6. unten rechts: 2.' }],
+      ' 12b ': [{ number: 'Antworten:', answer: '1 Aufrichten, 2 Abstützen, 3 Arm fassen, 4 Ziehen' }],
+      ' LK ': [
+        { number: '1', answer: 'Klaus Reichert, Kollegin verletzt.' },
+        { number: '2', answer: 'Mit der Heckenschere in der Hand geschnitten.' },
+        { number: '3', answer: 'Eine Person.' },
+        { number: '4', answer: 'Die Hand blutet stark und die Kollegin hat Schmerzen.' },
+      ],
     },
   },
   {
     id: '17',
     name: 'Rund um den Arbeitsvertrag',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1b ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) Arbeitgeber, 2) Arbeitnehmer, 3) Arbeitsverhältnis, 4) Probezeit, 5) Tätigkeit, 6) Arbeitsvergütung, 7) Urlaub, 8) Fortzahlung des Gehalts, 9) Nebentätigkeiten, 10) Kündigungsfrist',
+        },
+      ],
+      ' 1c ': [
+        { number: 'der Arbeitgeber:', answer: '4, 7, 9, 10;' },
+        { number: 'das Arbeitsverhältnis:', answer: '1, 3, 6, 11;' },
+        { number: 'der Arbeitnehmer:', answer: '2, 5, 8, 12 ' },
+      ],
+      ' 2 ': [
+        {
+          number: '1',
+          answer:
+            'Die Mitarbeiter dürfen nur Geschenke unter einem Wert von 16,00 Euro annehmen. Und sie dürfen sich zu einem Geschäftsessen einladen lassen. ',
+        },
+        { number: '2', answer: 'Die Mitarbeiter dürfen keine Geschenke über einem Wert von 16,00 Euro annehmen.' },
+      ],
+      ' 3a ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) Bruttoverdienst, 2) Lohnsteuer, 3) Kirchensteuer, 4) SoLi / Solidaritätszuschlag, 5) Krankenversicherung, 6) Pflegeversicherung, 7) Rentenversicherung, 8) Arbeitslosenversicherung, 9) Nettoverdienst',
+        },
+      ],
+      ' 3b ': [
+        {
+          number: 'Antworten:',
+          answer: '1) vereinbaren, 2) behält … ein, 3) verwendet, 4) zahlen, 5) sparen, 6) abgezogen, 7) erhalten, 8) überweist',
+        },
+      ],
+      ' 3c ': [{ number: 'Antworten:', answer: '1) falsch, 2) falsch, 3) richtig' }],
+      ' 4a ': [
+        { number: 'mask.:', answer: ' der gezahlte Lohn, den gezahlten Lohn, dem gezahlten Lohn, des gezahlten Lohns;' },
+        { number: 'fem.:', answer: ' die gezahlte Lohnsteuer, die gezahlte Lohnsteuer, der gezahlten Lohnsteuer, der gezahlten Lohnsteuer;' },
+        { number: 'neutr.:', answer: ' das gezahlte Gehalt, das gezahlte Gehalt, dem gezahlten Gehalt, des gezahlten Gehalts;' },
+        { number: 'Plural:', answer: 'die gezahlten Abgaben, die gezahlten Abgaben, den gezahlten Abgaben, der gezahlten Abgaben' },
+      ],
+      ' 4b ': [
+        { number: '1', answer: 'Die gezahlten Abgaben steigen jedes Jahr.' },
+        { number: '2', answer: 'Der gezahlte Lohn reicht aus, um jeden Monat etwas zu sparen. ' },
+        { number: '3', answer: 'Mit der gezahlten Lohnsteuer finanziert der Staat wichtige Investitionen. ' },
+        { number: '4', answer: 'Wegen des gezahlten Lohns kommt es immer wieder zum Streit.' },
+      ],
+      ' 4c ': [
+        { number: '1', answer: 'Der abgeschlossene Vertrag zeigt das Bruttogehalt.' },
+        { number: '2', answer: 'Die gemietete Wohnung hat einige Mängel. ' },
+        { number: '3', answer: 'Das gestohlene Geld hat er leider nie wiederbekommen.' },
+        { number: '4', answer: 'Sie können das reparierte Auto heute zwischen 15 und 18 Uhr abholen. ' },
+        { number: '5', answer: 'Wem gehört das nicht ausgeschaltete Handy? ' },
+        { number: '6', answer: 'Ich suche seit Stunden nach der noch nicht bezahlten Rechnung. ' },
+        { number: '7', answer: 'Die gestern erhaltene Bestellung kann erst nächste Woche bearbeitet werden. ' },
+        { number: '8', answer: 'Durch die geänderte Steuerklasse sparen wir jetzt 60 € im Monat.' },
+        { number: '9', answer: 'Alle auf der Sitzung besprochenen Punkte müssen ins Protokoll.' },
+        { number: '10', answer: 'Das für die Messe vorbereitete Material liegt bei Frau Wiesner im Büro.' },
+      ],
+      ' 5a ': [{ number: 'Antworten:', answer: '1d, 2c, 3e, 4f, 5a, 6b' }],
+      ' 5b ': [
+        { number: '1', answer: 'Der Betriebsrat vertritt die Interessen der Arbeitnehmer.' },
+        { number: '2', answer: 'Die Mitglieder des Betriebsrats werden gewählt. ' },
+        { number: '3', answer: 'Sie sollen Konflikte zwischen Arbeitgeber und Belegschaft verhindern.' },
+      ],
+      ' 7a ': [
+        {
+          number: 'Antworten:',
+          answer: '1 Resturlaub, 2 Freistellung, 3 Sperrzeit, 4 Kündigung, 5 Kündigungsfrist, 6 Abmahnung, 7 Arbeitslosigkeit',
+        },
+      ],
+      ' 7d ': [
+        { number: '1', answer: '31.5.20…' },
+        { number: '2', answer: 'Kündigung' },
+        { number: '11', answer: 'Sehr geehrter Herr Steglitz,' },
+        { number: '12', answer: 'hiermit kündige ich meinen bestehenden Arbeitsvertrag' },
+        { number: '6', answer: 'unter Einhaltung der Kündigungsfrist fristgerecht zum 30.6.20… .' },
+        { number: '9', answer: 'Bitte stellen Sie mir ein Arbeitszeugnis aus ' },
+        { number: '10', answer: 'und senden Sie mir dieses zusammen mit meinen Arbeitspapieren zu. ' },
+        { number: '13', answer: 'Bitte bestätigen Sie mir den Erhalt meiner Kündigung ' },
+        { number: '3', answer: 'sowie das Datum, zu dem der Arbeitsvertrag endet.' },
+        { number: '8', answer: 'Für die bisherige Zusammenarbeit ' },
+        { number: '5', answer: 'bedanke ich mich herzlich.' },
+        { number: '7', answer: 'Mit freundlichen Grüßen' },
+        { number: '4', answer: 'Timo Wesner' },
+      ],
+      ' 7e ': [{ number: 'Antworten:', answer: '1 eingereichte, 2 vereinbarte, 3 geleisteten, 4 getroffene' }],
+      ' 7f ': [{ number: 'Antworten:', answer: '1 falsch, 2 falsch, 3 richtig, 4 richtig, 5 falsch, 6 richtig, 7 falsch' }],
+      ' 8a ': [{ number: 'Antworten:', answer: '1c, 2a, 3c, 4b, 5c, 6a, 7a, 8c' }],
+      ' 9a ': [
+        { number: 'Antworten:', answer: '1 Werkvertrag, 2 Honorartätigkeit, 3 Minijob, 4 Praktikumsvertrag, 5 Zeitarbeit, 6 Teilzeitanstellung' },
+      ],
+      ' 9b ': [
+        { number: 'Werkvertrag', answer: '2, 3, 12, 13, 15, 17, 18, 19;' },
+        { number: 'Honorartätigkeit', answer: '1, 2, 3, 5, 12, 13, 15, 17, 19;' },
+        { number: 'Minijob', answer: '4, 6, 7, 17, 20;' },
+        { number: 'Praktikumsvertrag', answer: '5, 9, 15, 16, 17, 18, 20;' },
+        { number: 'Zeitarbeit', answer: '9, 14, 17, 18, 20;' },
+        { number: 'Teilzeitanstellung', answer: '4, 6, 7, 10, 11, 20' },
+      ],
+      ' 9c ': [{ number: 'Antworten:', answer: 'Sprecher 1c, Sprecher 2a, Sprecherin 3f' }],
+      ' LK ': [
+        {
+          number: '1',
+          answer:
+            'Tabea Meisner braucht morgen nicht kommen. Themen: Seminar zur Gleichberechtigung am Arbeitsplatz und Rauchverbot im Innenhof. Termin: morgen, 10 Uhr, großer Konferenzraum.',
+        },
+        {
+          number: '2',
+          answer:
+            '1) 3 Monate, 2) nein, bis zu 10% der regelmäßigen Arbeitszeit nicht, 3) soll innerhalb der Kündigungsfrist genommen werden, 4) nur mit Genehmigung des Arbeitsgebers, 5) nach Ablauf der Probezeit',
+        },
+      ],
     },
   },
 ];
