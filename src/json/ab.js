@@ -459,144 +459,922 @@ export const ab = [
     id: '4',
     name: 'Stellenangebote und Bewerbungen',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1a ': [
+        { number: '1', answer: 'Stelle' },
+        { number: '2', answer: 'unbefristete' },
+        { number: '3', answer: 'Bezahlung' },
+        { number: '4', answer: 'Urlaubs -' },
+        { number: '5', answer: 'vorbereiten' },
+        { number: '6', answer: 'fertigen' },
+        { number: '7', answer: 'abgeschlossene' },
+        { number: '8', answer: 'Schichtdienst' },
+        { number: '9', answer: 'Zuverlässigkeit' },
+        { number: '10', answer: 'Belastbarkeit' },
+      ],
+      ' 1b ': [{ number: 'Antworten:', answer: '1b, 2a, 3a, 4b' }],
+      ' 2 ': [{ number: 'Antworten:', answer: '5, 7, 2, 3, 10, 6, 8, 1, 9, 4' }],
+      ' 3a ': [{ number: 'Antworten:', answer: '1) nach, 2) um, 3) für, 4) für, 5) an, 6) auf, 7) an, 8) auf, 9) auf, 10) für' }],
+      ' 3b ': [
+        { number: '2', answer: 'Worum hat er sich noch nicht gekümmert? ' },
+        { number: '3', answer: 'Wofür hast du dich schon angemeldet?' },
+        { number: '4', answer: 'Wofür interessieren Sie sich?' },
+        { number: '5', answer: 'An wen soll ich mich bei Nachfragen zu dem Stellenangebot wenden? ' },
+        { number: '6', answer: 'Worauf sollte sich Anna bewerben? ' },
+        { number: '7', answer: 'An wen soll ich meine Bewerbung schicken?' },
+        { number: '8', answer: 'Worauf freuen Sie sich? ' },
+        { number: '9', answer: 'Worauf beziehen Sie sich?' },
+        { number: '10', answer: 'Wofür danken Sie?' },
+      ],
+      ' 4a ': [{ number: 'Antworten:', answer: '1b, 2f, 3c, 4e, 5a, 6d' }],
+      ' 4b ': [{ number: 'Antworten:', answer: 'a, b, d, f' }],
+      ' 5a ': [{ number: 'Antworten:', answer: '6, 1, 2, 7, 3, 5, 8, 4' }],
+      ' 5b ': [
+        { number: '1', answer: 'habe ich mit großem Interesse gelesen ' },
+        { number: '2', answer: 'es entspricht meinen Interessen und Qualifikationen ' },
+        { number: '3', answer: 'habe ich viel Erfahrung darin ' },
+        { number: '4', answer: 'Meine Kollegen schätzen mich für' },
+        { number: '5', answer: 'macht mir sehr viel Spaß' },
+        { number: '6', answer: 'Besonders attraktiv an Ihrem Stellenangebot ist für mich ' },
+        { number: '7', answer: 'Sehr gerne möchte ich mein Wissen ' },
+        { number: '8', answer: 'stehe ich gerne zur Verfügung ' },
+        { number: '9', answer: 'Über eine Einladung zu einem persönlichen Gespräch' },
+      ],
+      ' 5c ': [
+        { number: '1', answer: 'Sie ist zahnmedizinische Fachangestellte von Beruf.' },
+        { number: '2', answer: 'Auf stelle25.de.' },
+        { number: '3', answer: 'In einer Zahnarztpraxis. ' },
+        { number: '4', answer: 'Sie möchte auch mit Kindern arbeiten.' },
+      ],
+      ' 6a ': [
+        { number: '1', answer: 'Haben Sie uns ohne Probleme gefunden?' },
+        { number: '2', answer: 'Ja, das war kein Problem. Die Verkehrsanbindung ist ja sehr gut.' },
+        { number: '3', answer: 'Möchten Sie vielleicht etwas trinken, ein Wasser oder einen Kaffee? ' },
+        { number: '4', answer: 'Dann erzählen Sie doch ein bisschen über sich.' },
+        { number: '5', answer: 'Was würden Sie sagen sind Ihre größten Stärken? ' },
+        { number: '6', answer: 'Ich arbeite sehr exakt und dabei zügig. ' },
+        { number: '7', answer: 'Und was sind Ihre Schwächen? ' },
+        { number: '8', answer: 'Wie sind eigentlich Ihre Gehaltsvorstellungen?' },
+        { number: '9', answer: 'Könnten Sie mir sagen, wie groß Ihr Betrieb ist?' },
+        { number: '10', answer: 'Hätten Sie denn nächste Woche Zeit für ein paar Stunden Probearbeit?' },
+      ],
+      ' 6b ': [
+        { number: 'Arbeitgeber:', answer: '1, 3, 4, 5, 7, 8, 10.' },
+        { number: 'Bewerber:', answer: '2, 6, 9' },
+      ],
+      ' 6c ': [{ number: 'Antworten:', answer: '1) falsch, 2) falsch, 3) richtig, 4) falsch, 5) richtig' }],
+      ' 7a ': [{ number: 'Antworten:', answer: '1) Wiederholt, 2) Einmal, 3) Wiederholt, 4) Einmal, 5) Wiederholt' }],
+      ' 7b ': [{ number: 'Antworten:', answer: '1d, 2e, 3c, 4a, 5b' }],
+      ' 8a ': [
+        { number: '1', answer: 'Ich rufe nochmal wegen des Stellenangebots an.' },
+        { number: '2', answer: 'Ich wollte fragen, ob Sie sich schon für einen Bewerber entschieden haben?' },
+      ],
+      ' 8b ': [{ number: 'Antworten:', answer: '1) freien 2) Stelle 3) Stand 4) Dinge' }],
+      ' 8c ': [{ number: 'Antworten:', answer: '1) wollte, 2) erkundigen, 3) entschieden' }],
+      ' 9a ': [
+        { number: 'wann? temporal:', answer: 'gestern, viel zu früh, morgen.warum?' },
+        { number: 'kausal:', answer: 'zur Unterstützung, aus Nervosität, zur Beruhigung, wegen des Sturms.wie?' },
+        { number: 'modal:', answer: 'leider, gern.' },
+        { number: 'wo / wohin ? lokal:', answer: 'zu dem schwierigen Kunden, in die Firma, auf der Baustelle.' },
+      ],
+      ' 10a ': [
+        { number: '2', answer: '… wirklich gut gelaufen;' },
+        { number: '3', answer: 'Ich habe am Anfang aus Nervosität zu schnell …;' },
+        { number: '4', answer: 'Aber die Chefs waren …;' },
+        { number: '5', answer: 'Arabisch ist eben …;' },
+        { number: '6', answer: 'denn sie haben sich …;' },
+        { number: '7', answer: 'Soll ich da mal …;' },
+        { number: '8', answer: 'Ich arbeite noch immer sehr gerne;' },
+        { number: '9', answer: 'tatsächlich am liebsten …' },
+      ],
+      ' 11 ': [{ number: 'Antworten:', answer: '1b, 2b, 3b, 4c, 5b, 6a, 7a' }],
+      ' 12a ': [
+        {
+          number: 'Antworten:',
+          answer:
+            'Probezeit, Kündigungsfrist, Arbeitsvergütung, Arbeitszeit, Urlaubstage, Krankmeldung, Überstunden, Wochenarbeitszeit, Verschwiegenheitspflicht',
+        },
+      ],
+      ' 12b ': [{ number: 'Antworten:', answer: '1b, 2d, 3a, 4e, 5c' }],
+      ' 13a ': [{ number: 'Antworten:', answer: '4, 1, 6, 2, 3, 5' }],
+      ' 13b ': [
+        { number: '1', answer: 'Ich würde gerne wissen, ob ich mir hier Kaffee machen kann.' },
+        { number: '2', answer: 'Ich habe noch nicht genau verstanden, wofür ich bei diesem Projekt zuständig bin.' },
+        { number: '3', answer: 'Können Sie mir sagen, wo der Kopierer steht?' },
+        { number: '4', answer: 'Wissen Sie, wo derSchlüssel für das Lager ist?' },
+        { number: '5', answer: 'Könnten Sie mir sagen, wo ich Briefumschläge finde?' },
+        { number: '6', answer: 'Ich hätte eine Bitte: Würden Sie mir die Kaffeemaschine erklären?' },
+      ],
+      ' 14a ': [{ number: 'Antworten:', answer: '1) nichts, 2) alles, 3) etwas, 4) Alles, 5) nichts, 6) etwas' }],
+      ' 14b ': [{ number: 'Antworten:', answer: '1) den, 2) die, 3) das, 4) was, 5) dem, 6) den ' }],
+      ' LK ': [
+        { number: '1', answer: '1, 3, 4, 5' },
+        { number: '2', answer: '1) richtig, 2) falsch, 3) falsch, 4) richtig, 5) richtig ' },
+      ],
     },
   },
   {
     id: '5',
     name: 'Im Gespräch mit Kollegen',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1a ': [{ number: 'Antworten:', answer: '1) Wo, 2) Wohin, 3) Wo, 4) Wo, 5) Woher, 6) Wohin' }],
+      ' 1b ': [{ number: 'Antworten:', answer: '1) vom, aus; 2) im, bei, in, unter; 3) zur, nach, ins' }],
+      ' 2a ': [{ number: 'Antworten:', answer: '1) falsch, 2) richtig, 3) falsch, 4) richtig' }],
+      ' 3a ': [{ number: 'Antworten:', answer: '1) die; 2) den; 3) den, das; 4) die, den; 5) das; 6) den' }],
+      ' 3b ': [{ number: 'Antworten:', answer: '1) der; 2) dem; 3) dem, dem; 4) der, dem; 5) dem; 6) dem' }],
+      ' 3c ': [{ number: 'Antworten:', answer: '1) Akkusativ; 2) Dativ' }],
+      ' 4a ': [{ number: 'Antworten:', answer: '1) im, 2) zwischen, 3) im, 4) Vor, 5) Neben, 6) Auf, 7) in, 8) über, 9) im, 10) Hinter' }],
+      ' 4b ': [
+        { number: '1', answer: 'Die Kaffeemaschine steht an der Bar neben dem Schrank.' },
+        { number: '2', answer: 'Bitte stell die Gläser ins Regal unter die Getränke.' },
+        { number: '3', answer: 'Das Geschirrtuch kommt in die Küche an den Haken.' },
+        { number: '4', answer: 'Die Kerzen sind im Kasten über dem Kühlschrank.' },
+      ],
+      ' 5a ': [{ number: 'Nicht erlaubt:', answer: '2, 3, 4' }],
+      ' 5b ': [
+        { number: '2', answer: 'Es ist verboten, während der Arbeitszeit privat zu telefonieren. ' },
+        { number: '3', answer: 'Es ist verboten, zu spät aus der Mittagspause zu kommen. ' },
+        { number: '4', answer: 'Es ist verboten, die Fahrräder im Gebäude abzustellen.' },
+      ],
+      ' 5c ': [
+        { number: '1', answer: 'Es ist verboten zu rauchen.' },
+        { number: '2', answer: 'Es ist verboten zu fotografieren. ' },
+        { number: '3', answer: 'Es ist verboten den Bereich zu betreten.' },
+      ],
+      ' 6a ': [{ number: 'Antworten:', answer: '1) sollen, 2) brauchen, 3) dürfen, 4) müssen' }],
+      ' 7 ': [{ number: 'Antworten:', answer: '1b, 2c, 3a' }],
+      ' 8a  ': [
+        { number: '1', answer: 'Inga Scholl. ' },
+        { number: '2', answer: 'Ein Unfall.Eine Kollegin hat ihn mit dem Gabelstapler angefahren. ' },
+        { number: '3', answer: 'Eine Person.' },
+        { number: '4', answer: 'Schmerzen im Bein, er kann nicht aufstehen. ' },
+        { number: '5', answer: 'Im Lager der Firma Logistik Sander in der Julistraße 105.' },
+      ],
+      ' 9 ': [
+        { number: '1', answer: 'In der Autowerkstatt werden Autos repariert.' },
+        { number: '2', answer: 'Im Friseursalon werden Haare geschnitten. ' },
+        { number: '3', answer: 'Im Geschäft werden Waren verkauft. ' },
+        { number: '4', answer: 'In der Buchhaltung werden Rechnungen geschrieben. ' },
+        { number: '5', answer: 'In der Bäckerei werden Brote gebacken.' },
+      ],
+      ' 10 ': [
+        { number: '1', answer: 'Jan Küster' },
+        { number: '2', answer: '3' },
+        { number: '3', answer: '01.06.bis 05.06' },
+        { number: '4', answer: 'Arbeitsregeln' },
+        { number: '5', answer: 'Mauerecken' },
+        { number: '6', answer: 'Technische Mathematik' },
+        { number: '7', answer: 'Schnellbeton' },
+        { number: '8', answer: 'Innenwänden' },
+        { number: '9', answer: 'Technisches Zeichen' },
+        { number: '10', answer: 'Mauerwänden' },
+      ],
+      ' 11 ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) langweilig; 2) abwechslungsreich; 3) lange; 4) stressig; 5) sinnvolle; 6) dankbar; 7) schlechte; 8) besser; 9) nett; 10) fair; 11) neuen',
+        },
+      ],
+      ' 12 ': [
+        { number: '1', answer: 'Könnte man nicht die Teambesprechung montags machen?' },
+        { number: '2', answer: 'Wäre es nicht besser, wenn wir die Pflegeprodukte ins Regal stellen?' },
+        { number: '3', answer: 'Sollte nicht jeder seinen Arbeitsplatz selber sauber halten?' },
+        { number: '4', answer: 'Könnte man vielleicht für die Kunden eine Kundenkarte einrichten?' },
+      ],
+      ' 13a ': [
+        { number: '1', answer: 'Die Waschbecken müssen abends immer gereinigt werden.' },
+        { number: '2', answer: 'Die Shampoos können ins Regal gestellt werden.' },
+        { number: '3', answer: 'Die Bürsten dürfen in den Korb gelegt werden.' },
+        { number: '4', answer: 'Die Handtücher sollen gefaltet werden.' },
+      ],
+      ' 13b ': [{ number: 'Antworten:', answer: '1) muss, 2) sollen, 3) sollen, 4) können' }],
+      ' 14a ': [
+        { number: '1', answer: 'Der Arbeitgeber muss umgehend telefonisch informiert werden. ' },
+        { number: '2', answer: 'Eine Vertretung muss angewiesen werden. ' },
+        { number: '3', answer: 'Alle Termine müssen abgesagt werden.' },
+        { number: '4', answer: 'Die Arbeitsunfähigkeitsbescheinigung muss dem Arbeitgeber vorgelegt werden.' },
+      ],
+      ' 14b ': [{ number: 'Antworten:', answer: '1) Woche, 2) Fieber, 3) Arzt, 4) Krankmeldung, 5) Post' }],
+      ' LK ': [
+        { number: '1', answer: '1) Servicedienst, 2) Schild, 3) Fahrzeuge, 4) Reinigungszeit, 5) Urlaubsvertretung' },
+        { number: '2', answer: '1) falsch, 2) falsch, 3) richtig' },
+      ],
     },
   },
   {
     id: '6',
     name: 'Kontakte mit Kunden',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1 ': [{ number: 'Antworten:', answer: '1d, 2f, 3g, 4b, 5e, 6a, 7c' }],
+      ' 2a  ': [
+        {
+          number: 'Antworten:',
+          answer:
+            'Sehr geehrter Herr Heinze, ich beziehe mich auf unser Telefonat von heute Vormittag und bestelle 6 Packungen Haarfarbe (Nr.34GF932-2). Außerdem benötigen wir 10 Flaschen Shampoo (Nr. 79ZB027-3). Bitte schicken Sie uns die bestellte Ware bis Ende dieser Woche. Für Rückfragen stehe ich gerne zur Verfügung. Mit freundlichen Grüßen Yasmin Schokai',
+        },
+      ],
+      ' 2b ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) beziehe, 2) Hiermit, 3) Außerdem, 4) bestellen, 5) liefern, 6) Ware, 7) Werktage, 8) zu Händen, 9) Rückfragen, 10) zur Verfügung',
+        },
+      ],
+      ' 2d ': [{ number: 'Antworten:', answer: '1) darüber, 2) damit, 3) Dafür, 4) darum, 5) Davon, 6) dafür' }],
+      ' 3c ': [{ number: 'Antworten:', answer: '1a, 2c, 3b' }],
+      ' 3d ': [{ number: 'Antworten:', answer: '1) aus, 2) von, 3) von, 4) ins, 5) nach, 6) zum, 7) im, 8) bei, 9) von' }],
+      ' 3e ': [{ number: 'Antworten:', answer: '1) oben hinten; 2) Davor, rechts, links; 3) Unten; 4) Daneben; 5) dahin' }],
+      ' 3f ': [
+        {
+          number: 'Antworten:',
+          answer: '1) momentan, 2) gerade, 3) dann, 4) Zwischenzeitlich, 5) Dort, 6) werktags, 7) Dadurch, 8) Dort, 9) Deshalb',
+        },
+      ],
+      ' 4b ': [{ number: 'Antworten:', answer: '1) geehrte, 2) hiermit, 3) Zahnschmerzen, 4) Freitag, 5) dahin, 6) vormittags, 7) Ihren, 8) Grüße' }],
+      ' 5a ': [
+        {
+          number: 'Antworten:',
+          answer: 'die Schmerztablette, die Karies, die Zahnfüllung, das Inlay, die Betäubungsspritze, der Bohrer, die Füllung',
+        },
+      ],
+      ' 5b ': [{ number: 'Antworten:', answer: '1f, 2e, 3g, 4b, 5h, 6d, 7a, 8c' }],
+      ' 5c ': [{ number: 'Antworten:', answer: '1) um, 2) Anstatt, 3) um, 4) ohne, 5) anstatt, 6) um' }],
+      ' 5d ': [{ number: 'Antworten:', answer: '1) richtig, 2) richtig, 3) falsch, 4) richtig' }],
+      ' 6a ': [
+        {
+          number: 'Antworten:',
+          answer: 'Bestellung, Liefertermin, Lieferbedingungen, Lieferwagen, Preisnachlass, Mengenrabatt, Bestätigung, Rückmeldung',
+        },
+      ],
+      ' 6b ': [{ number: 'Antworten:', answer: '1f, 2e, 3a, 4d, 5c, 6b' }],
+      ' 6d ': [
+        { number: 'Antworten:', answer: '1) Anfrage, 2) Lieferant, 3) Anstatt, 4) Bestellformular, 5) sorgen, 6) Angebot, 7) freuen, 8) pünktlich' },
+      ],
+      ' 7b ': [
+        {
+          number: 'Antworten:',
+          answer: '1) Behandlung, 2) Bestellung, 3) Durchführung, 4) Entscheidung, 5) Besprechung, 6) Beschwerde, 7) Betäubung, 8) Lieferung',
+        },
+      ],
+      ' 8b ': [{ number: 'Antworten:', answer: '1a, 2b, 3b, 4b, 5a' }],
+      ' 8c  ': [
+        {
+          number: 'Antworten:',
+          answer: '1) beschweren, 2) entspricht, 3) zufrieden, 4) Anfrage, 5) hilfsbereit, 6) erreichen, 7) umtauschen, 8) Erstattung',
+        },
+      ],
+      ' 8e ': [{ number: 'Antworten:', answer: '1) dass, 2) weil, 3) denn, 4) Da, 5) wenn' }],
+      ' LK ': [
+        { number: '1', answer: '1) falsch, 2) richtig, 3) falsch, 4) richtig, 5) richtig' },
+        {
+          number: '3',
+          answer:
+            '1) Nein. 2) Es ging um ein wildes Tier, das nachts in die Kinderzimmer kommt und die Kinder holt. 3) Lukas hat sehr schlecht geträumt und viel geweint. 4) Nicht gut. 5) Er kommt zu Lukas und erklärt ihm, dass das nur eine Geschichte war und er keine Angst haben muss. 6) Die Geschichte in Zukunft zu ändern und lustiger zu machen.',
+        },
+      ],
     },
   },
   {
     id: '7',
     name: 'Berufsalltag in Deutschland',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1 ': [{ number: 'Antworten:', answer: '1b, 2d, 3a, 4c, 5f, 6e' }],
+      ' 2 ': [{ number: 'Antworten:', answer: '1) Wer, 2) Wen, 3) Wen, 4) Wer, 5) wem, 6) wen, 7) wem, 8) wem, 9) wem, 10) wen' }],
+      ' 3 ': [{ number: 'Antworten:', answer: '1) deinen, unseren, meinem 2) dein, Meine, meinem, den, die' }],
+      ' 4 ': [
+        {
+          number: 'Antworten:',
+          answer: '1) wichtig, 2) altmodisch, 3) klar, 4) vertraut, 5) Arbeitsplatz, 6) Jobs, 7) Idee, 8) Team, 9) Mitarbeiter, 10) Situation',
+        },
+      ],
+      ' 5 ': [
+        { number: '1', answer: 'Gastronomie' },
+        { number: '2', answer: 'Produktion' },
+        { number: '3', answer: 'Großhandel' },
+        { number: '4', answer: 'Einzelhandel' },
+        { number: '5', answer: 'Logistik' },
+        { number: '6', answer: 'öffentlicher Dienst' },
+        { number: '7', answer: 'IT - Branche' },
+        { number: '8', answer: 'Pharmaindustrie' },
+        { number: '9', answer: 'Metallindustrie' },
+        { number: '10', answer: 'Tourismus' },
+      ],
+      ' 6 ': [
+        { number: 'Medien:', answer: '1, 7, 8, 13, 17;' },
+        { number: 'Maschinenbau:', answer: '6, 14;' },
+        { number: 'Einzelhandel:', answer: '10, 20, 21;' },
+        { number: 'Tourismus:', answer: '3, 4;' },
+        { number: 'Immobilien:', answer: '2, 5;' },
+        { number: 'Gastronomie:', answer: '3, 15;' },
+        { number: 'Bildung:', answer: '8, 16;' },
+        { number: 'Pharmabranche:', answer: '21' },
+        { number: 'Transport / Logistik:', answer: '11, 12' },
+        { number: 'Metallindustrie:', answer: '6, 14' },
+        { number: 'IT:', answer: '1, 18' },
+        { number: 'öffentlicher Dienst:', answer: '9, 19' },
+      ],
+      ' 7 ': [
+        { number: '1', answer: 'Ich habe in meinem Heimatland in der Tourismusbranche gearbeitet.' },
+        { number: '2', answer: 'Vor zwei Jahren bin ich nach Deutschland gekommen. ' },
+        { number: '3', answer: 'An der VHS habe ich Deutsch gelernt. ' },
+        { number: '4', answer: 'Ich habe den Deutschkurs mit der B1- Prüfung abgeschlossen.' },
+        { number: '5', answer: 'Danach bin ich einige Jahre zu Hause geblieben, weil ich ein Kind bekommen habe.' },
+        { number: '6', answer: 'Dann habe ich mich um verschiedene Stellen beworben.' },
+        { number: '7', answer: 'Jetzt habe ich eine Arbeit in einem Reisebüro gefunden. ' },
+        { number: '8', answer: 'Vor zwei Monaten habe ich mit der Arbeit angefangen und die Arbeit gefällt mir sehr gut.' },
+      ],
+      ' 8a ': [
+        {
+          number: 'ge + … t / et:',
+          answer: 'ich habe gehört, gearbeitet, gejobbt, gesucht, gemacht, geleitet, gelernt, gelebt, gewohnt, gedacht, gebracht, gewusst, gekannt',
+        },
+        { number: '…ge +… + t:', answer: 'ich habe aufgehört, hergestellt, eingeräumt, kennengelernt; ich bin aufgewacht' },
+        {
+          number: 'ge + … + en:',
+          answer:
+            'ich habe gefunden, geschrieben, gegeben, gegessen, getrunken, geholfen, gesprochen, genommen, getroffen, gesehen, getragen, gelesen, geschlafen, gesessen, gehalten; ich bin gekommen, geblieben, gegangen, gewesen, geworden, geflohen',
+        },
+        {
+          number: '…ge + -… + en:',
+          answer:
+            'ich habe abgeschlossen, angefangen, angeboten, angerufen, teilgenommen, mitgenommen, eingeladen, vorgeschlagen, ausgegeben, ferngesehen; es hat stattgefunden; ich bin aufgestanden, angekommen, abgefahren, umgezogen, eingeschlafen',
+        },
+        { number: '… + t:', answer: 'ich habe studiert, verkauft, transportiert, telefoniert, produziert, organisiert, erklärt' },
+        { number: '… + en:', answer: 'ich habe bekommen, verloren, begonnen, besprochen, beraten, (mich) beworben, es hat gefallen' },
+      ],
+      ' 8b ': [
+        {
+          number: 'Antworten:',
+          answer: 'kommen, aufwachen, bleiben, gehen, sein, werden, fliehen, ankommen, aufstehen, abfahren, umziehen, einschlafen',
+        },
+      ],
+      ' 9 ': [
+        {
+          number: '1',
+          answer:
+            'Stefanie hat früher oft ihrem Vater in der Logistikfirma geholfen.Dann hat sie Informatik studiert. Letzten Monat hat sie sich bei verschiedenen IT-Firmen beworben und auch eine Stelle bekommen. Inzwischen hat sie mit ihrer Arbeit angefangen und bereits viele Kollegen kennengelernt. Heute ist sie sogar schon länger geblieben.',
+        },
+        {
+          number: '2',
+          answer:
+            'Mohammad hat in Syrien als Krankenpfleger gearbeitet.Er ist mit seiner Familie nach Deutschland geflohen und hat schnell Deutsch gelernt. Zuerst hat er in Berlin gelebt, dann ist er mit seiner Familie nach Hamburg umgezogen. Inzwischen hat er eine Stelle in einem Krankenhaus gefunden.',
+        },
+        {
+          number: '3',
+          answer:
+            'Anja ist heute zu spät aufgewacht. Sie ist erst um 9 Uhr aufgestanden und dann zu spät im Büro angekommen. Erst um 10 Uhr hat sie ihre Arbeit begonnen. Sie ist heute bis 19 Uhr im Büro gewesen.',
+        },
+      ],
+      ' 10 ': [
+        { number: '1', answer: 'Oleg fängt um 8 Uhr mit der Arbeit an.Oleg hat um 8 Uhr mit der Arbeit angefangen. ' },
+        { number: '2', answer: 'Am Vormittag nimmt er an einer Besprechung teil. Am Vormittag hat er an einer Besprechung teilgenommen. ' },
+        { number: '3', answer: 'Am Nachmittag ruft er viele Kunden an. Am Nachmittag hat er viele Kunden angerufen. ' },
+        { number: '4', answer: 'Um 19 Uhr hört er auf zu arbeiten.Um 19 Uhr hat er aufgehört zu arbeiten.' },
+      ],
+      ' 11 ': [
+        { number: '1', answer: 'Wo arbeiten Sie? Für welche Firma arbeiten Sie?' },
+        { number: '2', answer: 'Wo arbeiten Sie? In welcher Abteilung arbeiten Sie?' },
+        { number: '3', answer: 'Wofür / Für was sind Sie zuständig? Was sind Ihre Aufgaben?' },
+        { number: '4', answer: 'Könnte auch ich Möbel bei Ihnen bestellen?' },
+        { number: '5', answer: 'Sind Sie mit Ihrer Arbeit zufrieden? Gefällt Ihnen Ihre Arbeit?' },
+        { number: '6', answer: 'Warum würden Sie gern in einer anderen Abteilung arbeiten?' },
+        { number: '7', answer: 'In welcher Abteilung / Wo würden Sie am liebsten arbeiten?' },
+      ],
+      ' 13 ': [{ number: 'Antworten:', answer: '1) als, 2) im, 3) bei, 4) für, 5) im, 6) als, 7) bei, 8) als, 9) in' }],
+      ' 14 ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) Lager, 2) Verkauf, 3) Einkauf, 4) Kunden, 5) Abteilung, 6) Buchhaltung, 7) Geschäftsleitung, 8) Personalabteilung, 9) Personal, 10) Cafeteria, 11) Stockwerk',
+        },
+      ],
+      ' 15 ': [{ number: 'Antworten:', answer: '1e, 2h, 3f, 4a, 5b, 6d, 7c, 8g' }],
+      ' 16 ': [{ number: 'Falsch:', answer: '1) setzen, 2) herstellen, 3) zunehmen, 4) bearbeiten' }],
+      ' 17 ': [
+        { number: '1', answer: 'In der Produktion werden neue Produkte hergestellt.' },
+        { number: '2', answer: 'Im Labor werden Versuche durchgeführt.' },
+        { number: '3', answer: 'In der Einkaufsabteilung werden neue Waren bestellt.' },
+        { number: '4', answer: 'In der Kundenbetreuung werden Reklamationen und Beschwerden bearbeitet.' },
+        { number: '5', answer: 'Im Lager werden Waren angenommen und kontrolliert.' },
+        { number: '6', answer: 'Im Konferenzraum werden Besprechungen abgehalten.' },
+        { number: '7', answer: 'Im Vertrieb werden Produkte und Dienstleistungen verkauft.' },
+      ],
+      ' 18 ': [{ number: 'Antworten:', answer: '1a) falsch, 1b) richtig, 2a) richtig, 2b) falsch, 3a) falsch, 3b) richtig' }],
+      ' 19a ': [
+        { number: 'Gastronomie:', answer: 'Koch/Köchin, Kellner/in, Hotelfachfrau/-mann' },
+        { number: 'Baugewerbe:', answer: 'Bauarbeiter /in, Maurer /in, Architekt /in' },
+        { number: 'Pflege / Gesundheit:', answer: 'Krankenschwester, Krankenpfleger, Arzt / Ärztin, Altenpfleger /in' },
+      ],
+      ' 19b ': [{ number: 'Antworten:', answer: '1c, 2e, 3d, 4a, 5b' }],
+      ' 19c ': [
+        { number: '1', answer: 'Die Bürokorrespondenz wird erledigt. ' },
+        { number: '2', answer: 'Menschen werden gepflegt. ' },
+        { number: '3', answer: 'Mahlzeiten werden gekocht.' },
+        { number: '4', answer: 'Patienten werden untersucht. ' },
+        { number: '5', answer: 'Gäste werden empfangen. ' },
+        { number: '6', answer: 'Autos werden repariert. ' },
+        { number: '7', answer: 'Häuser und Gebäude werden gebaut. ' },
+      ],
+      ' LK ': [
+        {
+          number: '1',
+          answer:
+            'Duzen: [Vorteile: freundschaftlicher Umgang; alle Mitarbeiter sind Teil des Teams.Nachteile: sehr persönlich; nicht die nötige Distanz bei Meinungsverschiedenheiten] Siezen: [Vorteile: Respekt untereinander.Nachteile: Steifer Umgang miteinander; Mitarbeiter sind nicht gleichberechtigt.]',
+        },
+        {
+          number: '2a',
+          answer:
+            'Branchen:[Baubranche, Lebensmittelbranche, Friseurhandwerk, Handel, Gesundheitsbranche] Berufe:[Maurer, Dachdecker, Bäcker, Metzger, Verkäufer, Krankenpfleger, Fitnesstrainer]',
+        },
+        { number: '2b', answer: '1b, 2c, 3a, 4e, 5d' },
+      ],
     },
   },
   {
     id: '8',
     name: 'Bewerbungs unterlagen',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1a ': [
+        {
+          number: 'Antworten:',
+          answer:
+            'der Arbeitsvertrag, die Berufserfahrung, das Bewerbungsfoto, die Bewerbungsunterlagen, die Festanstellung, die Gehaltsvorstellungen, der Lebenslauf, die Personalabteilung, das Stellenangebot, der Stellenmarkt, das Vorstellungsgespräch',
+        },
+      ],
+      ' 1b ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) Stellenangebot, 2) Bewerbungsunterlagen, Lebenslauf, 3) Bewerbungsfoto, 4) Vorstellungsgespräch, 5) Berufserfahrung, 6) Gehaltsvorstellungen, 7) Arbeitsvertrag, 8) Festanstellung',
+        },
+      ],
+      ' 2 ': [
+        { number: '1', answer: 'Ausbildung, Berufserfahrung' },
+        { number: '2', answer: 'Universität, Kenntnisse' },
+        { number: '3', answer: ' Qualifikation, Fortbildung' },
+        { number: '4', answer: 'Zeugnis' },
+      ],
+      ' 3a ': [{ number: 'Korrekt:', answer: '1) abschließen, 2) sammeln, 3) machen, 4) erfüllen, 5) unterschreiben' }],
+      ' 3b ': [{ number: 'Antworten:', answer: '1) gemacht, 2) gesammelt, 3) abgeschlossen, 4) erfüllt, 5) unterschreiben' }],
+      ' 4 ': [
+        { number: '1', answer: 'Mohammad möchte wissen, ob die Stelle noch frei ist.' },
+        { number: '2', answer: 'Er fragt, was seine Aufgaben sind. ' },
+        { number: '3', answer: 'Er möchte wissen, wie die Arbeitszeiten sind.' },
+        { number: '4', answer: 'Ihn interessiert auch, ob er im Team arbeitet oder alleine. ' },
+        { number: '5', answer: 'Weiter fragt er, ob er auch am Wochenende arbeiten muss.' },
+        { number: '6', answer: 'Er erkundigt sich, wie die Bezahlung ist. ' },
+        { number: '7', answer: 'Er fragt, ob er auch ein Jobticket bekommen kann. ' },
+        { number: '8', answer: 'Ihn interessiert, wie lange die Probezeit ist. ' },
+        { number: '9', answer: 'Er möchte wissen, ob er einen festen Arbeitsvertrag bekommt. ' },
+        { number: '10', answer: 'Zum Schluss stellt er die Frage, wann er mit der Arbeit anfangen könnte.' },
+      ],
+      ' 5 ': [{ number: 'Antworten:', answer: '1) falsch, 2) richtig, 3) falsch, 4) falsch' }],
+      ' 6 ': [
+        {
+          number: 'Antworten:',
+          answer: '1) Persönliche Daten, 2) Familienstand, 3) Weiterbildung, 4) Berufserfahrung, 5) Schulbildung, 6) Besondere Kenntnisse',
+        },
+      ],
+      ' 7a ': [
+        { number: '1', answer: 'Bevor Rabia ihr Vorstellungsgespräch hatte, hatte sie ihre Unterlagen noch einmal durchgesehen. ' },
+        { number: '2', answer: 'Bevor Malaika nach Deutschland gekommen ist, hatte sie in Somalia gelebt.' },
+        { number: '3', answer: 'Bevor Marcel in der Personalabteilung gearbeitet hat, war er in der Buchhaltung tätig.' },
+      ],
+      ' 7b ': [
+        { number: '1', answer: 'Nachdem Elena das Anschreiben am Computer verfasst hat, schickt sie es ihrem Chef.' },
+        { number: '2', answer: 'Nachdem Jens den Lieferanten ausgewählt hat, bestellt er neue Waren.' },
+        { number: '3', answer: 'Nachdem Ludmilla eine Tasse Kaffee getrunken hat, fängt sie mit ihrer Arbeit an.' },
+      ],
+      ' 7c ': [
+        { number: '1', answer: 'Während Marcel mit seiner Kollegin spricht, klingelt das Telefon. ' },
+        { number: '2', answer: 'Während Fayyad eine Bewerbung schreibt, kommt ein Nachbar zu Besuch.' },
+        { number: '3', answer: 'Während Jens auf einen Kunden wartet, findet eine wichtige Besprechung statt.' },
+      ],
+      ' 7d ': [
+        { number: '1', answer: 'Seit / Seitdem Igor viel Kontakt zu seinen Kollegen hat, ist sein Deutsch viel besser.' },
+        { number: '2', answer: 'Seit / Seitdem Muzit im Krankenhaus arbeitet, muss sie viele Überstunden machen. ' },
+        { number: '3', answer: 'Seit / Seitdem Stefanie ein Praktikum macht, hat sie keine Zeit mehr für den Chor.' },
+      ],
+      ' 8 ': [{ number: 'Antworten:', answer: '1a, 2c, 3g, 4b, 5f, 6e, 7d, 8h' }],
+      ' 9 ': [{ number: 'Antworten:', answer: '1b, 2c, 3a, 4b, 5b, 6a' }],
+      ' 10a ': [
+        { number: '*', answer: 'kommen - kam - gekommen' },
+        { number: '*', answer: 'nehmen - nahm - genommen' },
+        { number: '*', answer: 'sprechen - sprach - gesprochen' },
+        { number: '*', answer: 'helfen - half - geholfen' },
+        { number: '*', answer: 'treffen - traf - getroffen' },
+        { number: '*', answer: 'bleiben - blieb - geblieben' },
+        { number: '*', answer: 'schreiben - schrieb - geschrieben' },
+        { number: '*', answer: 'liegen - lag - gelegen' },
+        { number: '*', answer: 'geben - gab - gegeben' },
+        { number: '*', answer: 'gehen - ging - gegangen' },
+        { number: '*', answer: 'finden - fand - gefunden' },
+        { number: '*', answer: 'fahren - fuhr - gefahren' },
+        { number: '*', answer: 'ziehen - zog - gezogen' },
+        { number: '*', answer: 'umziehen - zog um - umgezogen' },
+        { number: '*', answer: 'schließen - schloss - geschlossen' },
+        { number: '*', answer: 'gefallen - gefiel - gefallen' },
+        { number: '*', answer: 'bringen - brachte - gebracht' },
+        { number: '*', answer: 'denken - dachte - gedacht' },
+        { number: '*', answer: 'kennen - kannte - gekannt' },
+        { number: '*', answer: 'wissen - wusste - gewusst' },
+        { number: '*', answer: 'sein - war - gewesen' },
+        { number: '*', answer: 'haben - hatte - gehabt' },
+        { number: '*', answer: 'arbeiten - arbeitete - gearbeitet' },
+        { number: '*', answer: 'leben - lebte - gelebt' },
+        { number: '*', answer: 'wohnen - wohnte - gewohnt' },
+        { number: '*', answer: 'besuchen - besuchte - besucht' },
+        { number: '*', answer: 'suchen - suchte - gesucht' },
+        { number: '*', answer: 'anmelden - meldete an - angemeldet' },
+        { number: '*', answer: 'lernen - lernte - gelernt' },
+        { number: '*', answer: 'hören - hörte - gehört' },
+        { number: '*', answer: 'gründen - gründete - gegründet' },
+        { number: '*', answer: 'machen - machte - gemacht' },
+      ],
+      ' 10b ': [
+        {
+          number: 'Beispiel:',
+          answer:
+            'Jannis kam vor drei Jahren aus Griechenland nach Deutschland. Er wohnte zuerst in Stralsund und suchte lange Zeit Arbeit. Er schrieb viele Bewerbungen, fand aber keine Stelle. Danach zog er nach Berlin und traf dort Freunde aus Griechenland. Sie halfen ihm bei seinen Bewerbungen. Nach drei Monaten fand er endlich eine Beschäftigung in einem Möbelhaus. Weil ihm die Arbeit als Verkäufer nicht gefiel, meldete er sich zu einer Fortbildung für den Einzelhandel an.',
+        },
+      ],
+      ' 11 ': [{ number: 'Antworten:', answer: '1) falsch, 2) b, 3) falsch, 4) a' }],
+      ' 12a ': [
+        {
+          number: '1',
+          answer:
+            'Sehr geehrte Damen und Herren, mit großem Interesse habe ich Ihre Anzeige gelesen und möchte mich um die Stelle als Rezeptionistin bewerben.',
+        },
+        { number: '2', answer: 'In meiner Heimat konnte ich schon viele Erfahrungen in diesem Beruf sammeln.' },
+        {
+          number: '3',
+          answer: 'Es macht mir großen Spaß, Gäste zu beraten und ich kann von mir sagen, dass ich kontaktfreudig und zuverlässig bin.',
+        },
+        { number: '4', answer: 'Über eine Einladung zu einem persönlichen Gespräch würde ich mich sehr freuen.' },
+      ],
+      ' 12b ': [
+        {
+          number: 'Antworten:',
+          answer:
+            'Bevor Malaika nach Deutschland kam, hatte sie als Näherin gearbeitet. Sie hat einen Kredit aufgenommen, weil sie sich selbstständig machen wollte. Zusammen mit ihrer Mutter hat sie eine Schneiderei eröffnet und Kleider auf dem Markt verkauft. In Deutschland möchte sie eine Ausbildung zur Hotelkauffrau machen. Sie hofft, dass sie einen Ausbildungsplatz bekommt.',
+        },
+      ],
+      ' 13 ': [{ number: 'Antworten:', answer: 'A3, B5, C4' }],
+      ' LK ': [
+        { number: '1:', answer: '1) falsch, 2) richtig, 3) richtig, 4) richtig, 5) falsch' },
+        { number: '2b:', answer: ' 1c, 2a, 3d, 4b' },
+      ],
     },
   },
   {
     id: '9',
     name: 'Arbeit und Familie',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1 ': [{ number: 'Antworten:', answer: '1b, 2d, 3f, 4c, 5e, 6a, 7g' }],
+      ' 2 ': [
+        { number: '1', answer: 'Wenn Dimitra sehr spät mit der Arbeit aufhört, ist sie sehr müde.' },
+        { number: '2', answer: 'Wenn Mitarbeiter zu spät zur Arbeit kommen, bekommen sie Ärger mit dem Chef.' },
+        { number: '3', answer: 'Wenn Malaika im Hotel arbeitet, muss sie sich umziehen.' },
+        { number: '4', answer: 'Wenn Malaika nachmittags zu Hause ist, spielt sie mit ihrem Sohn.' },
+        { number: '5', answer: 'Wenn Fadi viele Aufträge hat, muss er auch am Wochenende arbeiten.' },
+        { number: '6', answer: 'Wenn Kunden ihn anrufen, hilft er ihnen gerne. ' },
+        { number: '7', answer: 'Wenn Bassam Krankenpfleger werden will, muss er eine Ausbildung machen.' },
+      ],
+      ' 3 ': [{ number: 'Antworten:', answer: '1c, 2b, 3e' }],
+      ' 4 ': [{ number: 'Falsch:', answer: '1) durchführen, 2) ausbilden, 3) treffen, 4) übersetzen, 5) arbeiten, 6) anmachen, 7) ausbilden' }],
+      ' 5 ': [
+        {
+          number: '*',
+          answer:
+            'Name, arbeite, Krankenhaus, Woche, Vollzeit, Spaß, Zeit, immer, muss, Termine, vorbereiten, Schreibtisch, telefonieren, Aufgabe, langweilig, gefällt, Kontakt, haben.',
+        },
+        {
+          number: '*',
+          answer:
+            'Abteilung, interessant, berate, verantwortlich, Lieferanten, Reklamation, finden, entscheiden, Chef.Restaurant, Arbeite, anstrengend, bezahlt, wichtig, Kollegen, sammeln, gelernt, anerkannt, hoffentlich. ',
+        },
+      ],
+      ' 6 ': [
+        { number: '1', answer: 'Zuerst trinkt Toma einen Kaffee.' },
+        { number: '2', answer: 'Dann beginnt er mit der Arbeit.' },
+        { number: '3', answer: 'Danach muss Toma viel telefonieren.' },
+        { number: '4', answer: 'Anschließend besucht er einen Kunden. ' },
+        { number: '5', answer: 'Zuerst macht er ihm ein Angebot. ' },
+        { number: '6', answer: 'Schließlich einigen sich beide.' },
+      ],
+      ' 8 ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) Stress, 2) überfordert, 3) Betriebsrat, 4) unterfordert, 5) Aufstiegschancen, 6) Fortbildung, 7) keine Anerkennung, 8) Tätigkeiten, 9) unfaire Bezahlung, 10) Streik',
+        },
+      ],
+      ' 9 ': [
+        { number: '1', answer: 'bearbeiten, schreiben' },
+        { number: '2', answer: 'aushelfen' },
+        { number: '3', answer: 'koordinieren, schreiben, erstellen' },
+        { number: '4', answer: 'bearbeiten, entgegennehmen' },
+        { number: '5', answer: 'entgegennehmen, bearbeiten' },
+        { number: '6', answer: 'koordinieren' },
+        { number: '7', answer: 'einarbeiten' },
+        { number: '8', answer: 'vereinbaren, koordinieren' },
+        { number: '9', answer: 'servieren' },
+        { number: '10', answer: 'aufgeben, bearbeiten, entgegennehmen' },
+      ],
+      ' 10a ': [
+        {
+          number: 'n- Deklination:',
+          answer:
+            'der Kunde, der Mensch, der Polizist, der Lieferant, der Praktikant, der Name, der Automat, der Kollege, der Nachbar, der Student, der Architekt, der Journalist, der Tourist, der Vorgesetzte, der Franzose, der Grieche;',
+        },
+        {
+          number: 'keine n- Deklination:',
+          answer: 'die Aufgabe, die Adresse, die Ware, die Maschine, die Anlage, die Broschüre, die Messe, die Sache, der Chef, der Italiener',
+        },
+      ],
+      ' 10b ': [
+        { number: '1', answer: 'Herrn, -, -;' },
+        { number: '2', answer: 'Getränkeautomaten, -, Herrn, Praktikanten, Kunden, -, Automaten;' },
+        { number: '3', answer: '-, -, -, Lieferanten, -, Herrn;' },
+        { number: '4', answer: 'Nachbarn, Studenten, -, -, -, -.' },
+      ],
+      ' 11 ': [{ number: 'Antworten:', answer: '1) Kindertagesstätte, 2) Kita, 3) Krippe, 4) Tagesmutter, 5) Ganztagsschulen' }],
+      ' 13a ': [
+        { number: 'ich', answer: 'mein, meine, mein' },
+        { number: 'du', answer: 'dein, deine, dein' },
+        { number: 'er/es', answer: 'sein, seine, sein' },
+        { number: 'sie', answer: 'ihr, ihre, ihr' },
+        { number: 'wir', answer: 'unser, unsere, unser' },
+        { number: 'ihr', answer: 'euer, eure, euer' },
+        { number: 'sie (Plural)', answer: 'ihr, ihre, ihr' },
+        { number: 'Sie', answer: 'Ihr, Ihre, Ihr' },
+      ],
+      ' 13b ': [
+        { number: 'Nominativ', answer: 'mein meine mein meine' },
+        { number: 'Akkusativ', answer: 'meinen meine mein meine' },
+        { number: 'Dativ', answer: 'meinem meiner meinem meinen' },
+        { number: 'Genitiv', answer: 'meines meiner meines meiner' },
+      ],
+      ' 13c ': [
+        { number: '1', answer: 'mein Sohn, meinen Sohn, meinem Sohn;' },
+        { number: '2', answer: 'unsere Tochter, unsere Tochter, unserer Tochter;' },
+        { number: '3', answer: 'Ihr Kind, meinem Kind, mein Kind;' },
+        { number: '4', answer: 'Meine Kinder, meinen Kindern, meine Kinder;' },
+        {
+          number: '5',
+          answer:
+            'meine Familie, mein Vater, meine Mutter, mein Bruder, meines Bruders, Mein Kollege, seinen Garten, mein Chef, meines Kollegen, meiner Familie, seinen Kindern, seinem Sohn, seiner Tochter',
+        },
+      ],
+      ' 14 ': [
+        { number: '1', answer: 'Dimitra würde gerne weniger arbeiten. ' },
+        { number: '2', answer: 'Dimitra würde gerne nicht so viele Überstunden machen. ' },
+        { number: '3', answer: 'Petra hätte gerne mehr Zeit für die Familie. ' },
+        { number: '4', answer: 'Herr Meyer würde gerne seinen Termin verschieben.' },
+        { number: '5', answer: 'Anja wäre gerne Chefin ihrer Abteilung.' },
+      ],
+      ' 15 ': [{ number: 'Antworten:', answer: '1x, 2x, 3A, 4B, 5C' }],
+      ' LK ': [
+        { number: '1a:', answer: '1) richtig, 2) falsch, 3) richtig, 4) falsch, 5) falsch' },
+        { number: '1b:', answer: ' 1c, 2e, 3a, 4b, 5d' },
+      ],
     },
   },
   {
     id: '10',
     name: 'Beruflich unterwegs',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1 ': [{ number: 'Antworten:', answer: '1n, 2e, 3k, 4q, 5a, 6o, 7h, 8j, 9r, 10l, 11d, 12p, 13b, 14m, 15f, 16i, 17g, 18c' }],
+      ' 2 ': [
+        {
+          number: 'Antworten:',
+          answer: '1) für, 2) vom, 3) zum, 4) aus, 5) ohne, 6) außer, 7) mit, 8) Aus, 9) zum, 10) für, 11) zum, 12) mit, 13) zur',
+        },
+      ],
+      ' 3 ': [{ number: 'Antworten:', answer: '1) der, 2) die, 3) dieses, 4) den, 5) dem, 6) biologischem, 7) der' }],
+      ' 4a ': [
+        {
+          number: 'Grund der Reise:',
+          answer: 'Kundenbesuch, Montage, Tagung, Meeting, Besprechung, Messe, an einer Weiterbildung / einem Kongress teilnehmen;',
+        },
+        { number: 'An- und Abreise:', answer: 'Gepäck, Flugzeug, Firmenwagen, Bahn, Check-in, Zug, Taxi, Fahrgemeinschaft, Gepäck, Koffer packen;' },
+        {
+          number: 'Hotel/Pension:',
+          answer:
+            'Gepäck, Übernachtung, Einzelzimmer, Doppelzimmer, im Zentrum, zentrale Lage, wenige Gehminuten zur U-Bahn, Frühstücksbüfett, Nähe Flughafen, Check-in, Rezeption;',
+        },
+        { number: 'Buchung:', answer: 'mit Kreditkarte, am Telefon, online' },
+      ],
+      ' 4b ': [
+        {
+          number: 'Beispiele:',
+          answer:
+            'Ich war auf Geschäftsreise, weil ich zu einer Messe musste. Wir haben mit Kreditkarte gebucht. Wir haben ein Hotel in zentraler Lage gefunden. Wir sind mit dem Zug und dem Taxi zum Hotel gefahren.',
+        },
+      ],
+      ' 5 ': [
+        { number: 'a:', answer: '1) Können, 2) soll, 3) kann;' },
+        { number: 'b:', answer: '4) müssen, 5) kann, 6) muss, 7) können, 8) dürfen, 9) möchte, 10) wollen, 11) können' },
+      ],
+      ' 6 ': [{ number: 'A:', answer: '1b, 2c, 3b, 4a, 5a; B: 1c, 2b, 3a, 4c, 5a' }],
+      ' 7 ': [{ number: 'Antworten:', answer: '1c, 2b' }],
+      ' 8 ': [{ number: 'Antworten:', answer: '1) bei, 2) Von, 3) nach, 4) aus, 5) zur, 6) durch, 7) um, 8) bei, 9) gegen, 10) aus' }],
+      ' 9a ': [
+        { number: '1', answer: 'In die rechte Ecke,' },
+        { number: '2', answer: 'Vor die Waschmaschine und den Kühlschrank,' },
+        { number: '3', answer: 'Zwischen die beiden Geräte,' },
+        { number: '4', answer: 'Auf die linke Seite,' },
+        { number: '5', answer: 'vor den Fernseher, unter den Fernseher, hinter den Fernseher und das Radio,' },
+        { number: '6', answer: 'Neben den Fernseher, in die Mitte,' },
+        { number: '7', answer: 'an die Decke über die Waren,' },
+        { number: '8', answer: 'an die Waren' },
+      ],
+      ' 9b ': [
+        { number: '1', answer: 'in der rechten Ecke,' },
+        { number: '2', answer: 'zwischen der Waschmaschine und dem Kühlschrank,' },
+        { number: '3', answer: 'zwischen den beiden,' },
+        { number: '4', answer: 'auf der linken Seite,' },
+        { number: '5', answer: 'vor dem Fernseher, unter dem Fernseher, hinter dem Fernseher und dem Radio,' },
+        { number: '6', answer: 'neben dem Fernseher, in der Mitte,' },
+        { number: '7', answer: 'an der Decke über den Waren,' },
+        { number: '8', answer: 'an den Waren' },
+      ],
+      ' 10 ': [
+        { number: '1', answer: 'Ich habe sie doch an die Wände gestellt.' },
+        { number: '2', answer: '… im Keller auf den Tisch gelegt.' },
+        { number: '3', answer: '… vor die Hauswand gelegt.' },
+        { number: '4', answer: '… vor das Waschbecken gestellt.' },
+        { number: '5', answer: '… auf die Therme gelegt.' },
+      ],
+      ' 11 ': [
+        {
+          number: 'Beispiel:',
+          answer:
+            'Am Donnerstag liefert die Firma ImmerFrisch um 20 Uhr die Ware. Danach, um 21 Uhr, bereitet Laura die Gerichte für Freitag zu. Um 23 Uhr stellt sie die Gerichte über Nacht (für den nächsten Tag) kühl. Am Freitag hat Karim ab 7 Uhr Dienst. Er beginnt mit der Zubereitung der Speisen. Das Gemüse muss gewaschen, geschält und geschnitten werden, das Fleisch wird angebraten. Dann würzt er das Fleisch und backt außerdem noch das Brot auf. Um 10 Uhr sind die Gerichte fertig. Um 10.15 Uhr kontrolliert der Küchenleiter, ob alles in Ordnung ist, und ab 11 Uhr gibt Karim das Essen aus. Am Nachmittag bestellt er noch die Produkte für den nächsten Tag und ab 15.30 Uhr reinigt er die Küche.',
+        },
+      ],
+      ' 12 ': [
+        { number: '1', answer: 'Tom, könntest / würdest du mir mal die Maschine erklären?' },
+        { number: '2', answer: 'Könnten / Würden Sie bitte heute noch die Lagerbestände prüfen?' },
+        { number: '3', answer: 'Könnten / Würden Sie bis heute Mittag die Unterlagen für die Dienstreise zusammenstellen?' },
+        { number: '4', answer: 'Anja, könntest / würdest du bitte für mich ans Telefon gehen?' },
+        { number: '5', answer: 'Frau Kobler, könnten / würden Sie bitte einen Termin mit der Firma Grohmann vereinbaren?' },
+        { number: '6', answer: 'Andreas, könntest/würdest du dich bitte um die Kundin kümmern?' },
+        { number: '7', answer: 'Sabine, könntest / würdest du mir bitte die Schere geben?' },
+        { number: '8', answer: 'Könntest / Würdest du bitte die Firma Meier anrufen?' },
+        { number: '9', answer: 'Herr Lehmann, könnten / würden Sie bitte die Geschäftsreise planen?' },
+      ],
+      ' 13 ': [
+        {
+          number: 'Antworten:',
+          answer: '1) Könnte / Dürfte, 2) Wärst, 3) Könnten, 4) Sollten, 5) Hätte, 6) Hätten, 7) Könnten, 8) Solltest, 9) Hätten',
+        },
+      ],
+      ' 14 ': [
+        { number: '1', answer: 'Sie sollten die Aufgaben heute noch erledigen. ' },
+        { number: '2', answer: 'Sie sollten die Firma Groß heute noch anrufen. ' },
+        { number: '3', answer: 'Du solltest bei Problemen ein Gespräch mit dem Chef suchen.' },
+        { number: '4', answer: 'Du solltest dich bei der Rezeption über das schlechte Zimmer beschweren.' },
+      ],
+      ' 15 ': [
+        {
+          number: 'um etwas bitten:',
+          answer:
+            'Könnten Sie …?/ Wären Sie bereit … zu …? / Wäre es Ihnen möglich … zu …? absagen: Es tut mir leid, das geht nicht, weil … / Heute passt es mir gar nicht.',
+        },
+        {
+          number: 'zustimmen:',
+          answer:
+            'Ja, kein Problem. / Das mache ich gern. / Na gut, wenn es sein muss. / Gut, wenn es gar nicht anders geht. / Das geht in Ordnung. nachfragen/',
+        },
+        {
+          number: 'einen Gegenvorschlag machen:',
+          answer:
+            'Was müsste ich eigentlich erledigen? / Was wären dann meine Aufgaben? / Gibt es keine andere Möglichkeit? / Könnte das nicht jemand anders machen? / Vielleicht könnte mein Kollege das erledigen. / Wir könnten doch auch … / Wir sollten vielleicht …',
+        },
+      ],
+      ' 16 ': [{ number: 'Antworten:', answer: '1) richtig 2) falsch 3) richtig 4) richtig 5) falsch 6) richtig' }],
+      ' LK ': [
+        {
+          number: '1 Vorteile:',
+          answer:
+            'Abwechslung vom Büroalltag, neue Eindrücke, man lernt neue Orte und Leute kennen, neue Kulturen, kann sich weiterentwickeln; Nachteile: muss sich an neue Situationen gewöhnen, sich neu orientieren, nicht so gemütlich wie zu Hause, wenig Zeit für Freunde und Familie',
+        },
+        { number: '2', answer: '1) falsch, 2) richtig, 3) richtig, 4) falsch ' },
+      ],
     },
   },
   {
     id: '11',
     name: 'Verkaufsgespräche und Small Talk',
     tasks: {
-      // ' NNNNN ': [
-      //   { number: '1', answer: 'tttttttt' },
-      //   { number: '2', answer: 'tttttttt' },
-      //   { number: '3', answer: 'tttttttt' },
-      //   { number: '4', answer: 'tttttttt' },
-      //   { number: '5', answer: 'tttttttt' },
-      //   { number: '6', answer: 'tttttttt' },
-      //   { number: '7', answer: 'tttttttt' },
-      //   { number: '8', answer: 'tttttttt' },
-      //   { number: '9', answer: 'tttttttt' },
-      //   { number: '10', answer: 'tttttttt' },
-      // ],
+      ' 1a ': [
+        {
+          number: 'Antworten:',
+          answer: '1) Besucher, 2) Aussteller, 3) Wettbewerber, 4) Stand, 5) Dienstleistungen, 6) Präsenz, 7) Kontakte, 8) Branche',
+        },
+      ],
+      ' 1b ': [
+        { number: 'Antworten:', answer: '1) knüpfen, 2) mieten, 3) informieren, 4) vorstellen, 5) vereinbaren, 6) treffen, 7) führen, 8) bleiben' },
+      ],
+      ' 2 ': [{ number: 'Antworten:', answer: '1i, 2f, 3d, 4c, 5j, 6b, 7h, 8g' }],
+      ' 3a ': [{ number: 'Antworten:', answer: '1) falsch, 2) richtig, 3) falsch, 4) falsch, 5) richtig, 6) falsch, 7) richtig, 8) richtig' }],
+      ' 3b ': [
+        { number: '1', answer: 'Heute gab es eine Störung auf der Webseite. Aber morgen kann wieder gebucht werden. ' },
+        { number: '3', answer: 'Die angegebenen Preise für die Stände sind nur Preise für die Miete. ' },
+        { number: '4', answer: 'Die Stromkosten sind beim großen Stand höher.' },
+        { number: '6', answer: 'Die Messe soll sich um die Standreinigung kümmern.' },
+      ],
+      ' 3c ': [
+        {
+          number: 'Reihenstand:',
+          answer:
+            'billiger, kleiner, für das Publikum geschlossener, hat Außenwände als Fläche für Grafik(Logo, Powerpoint- Präsentation), höhere Kosten für Wände, weniger Zulauf von Besuchern Stand in der Mitte (Inselstand): teurer, alleinstehend, von allen Seiten offen, dadurch sehr repräsentativ, keine Außenwände, höhere Kosten für Fußboden, höhere Stromkosten',
+        },
+      ],
+      ' 4a ': [
+        { number: '1', answer: 'Das ist der neue Messestand, ein neuer Messestand.' },
+        { number: '2', answer: 'Das ist die aktuelle Preisliste, eine aktuelle Preisliste.' },
+        { number: '3', answer: 'Das ist das neue Logo, ein neues Logo. ' },
+        { number: '4', answer: 'Das sind die attraktiven Angebote, attraktive Angebote. ' },
+        { number: '5', answer: 'Wir suchen den neuen Messestand, einen neuen Messestand. ' },
+        { number: '6', answer: 'Wir suchen die aktuelle Preisliste, eine aktuelle Preisliste.' },
+        { number: '7', answer: 'Wir präsentieren das neue Logo, ein neues Logo.' },
+        { number: '8', answer: 'Wir präsentieren die attraktiven Angebote, attraktive Angebote. ' },
+        { number: '9', answer: 'Wir stehen vor dem neuen Messestand, einem neuen Messestand.' },
+        { number: '10', answer: 'Wir stehen vor der aktuellen Preisliste, einer aktuellen Preisliste.' },
+        { number: '11', answer: 'mit dem neuen Logo, einem neuen Logo ' },
+        { number: '12', answer: 'mit den attraktiven Angeboten, attraktiven Angeboten ' },
+        { number: '13', answer: 'wegen des neuen Messestands, eines neuen Messestands ' },
+        { number: '14', answer: 'wegen der aktuellen Preisliste, einer aktuellen Preisliste ' },
+        { number: '15', answer: 'wegen des neuen Logos, eines neuen Logos ' },
+        { number: '16', answer: 'wegen der attraktiven Angebote, attraktiver Angebote' },
+      ],
+      ' 4b ': [
+        { number: '1', answer: 'einen aktuellen Flyer, Der aktuelle Flyer,' },
+        { number: '2', answer: 'eine aktuelle Informationsmappe, Die aktuelle Informationsmappe,' },
+        { number: '3', answer: 'ein neues Messeprogramm, Das neue Messeprogramm,' },
+        { number: '4', answer: 'neue Broschüren, Die neuen Broschüren,' },
+        { number: '5', answer: 'aktuelle Preislisten, Die aktuellen Preislisten,' },
+        { number: '6', answer: 'englische Kataloge, Die englischen Kataloge,' },
+        { number: '7', answer: 'Eine aktuelle Preisliste, vor dem neuen Messestand,' },
+        { number: '8', answer: 'Der neue Werbeflyer,' },
+        { number: '9', answer: 'Das vollständige Werbematerial,' },
+        { number: '10', answer: 'die aktualisierten Broschüren,' },
+        {
+          number: '11',
+          answer:
+            'zweisprachige Flyer, die aktuellen Flyer, aktuelle Poster und Sticker, ein praktischer Prospektständer, aus hochwertigem Kunststoff, ein großes Wandregal und kundenfreundliche Sitzmöbel, attraktive Kugelschreiber mit dem neuen Logo, die alten Kugelschreiber, unser neues Logo, verschiedene, kostenlose Give-aways (Taschen in mehreren Farben) als nette Werbegeschenke,',
+        },
+        { number: '12', answer: 'Neue Kontakte, die neuen Kontakte, entsprechende Angebote' },
+      ],
+      ' 5 ': [
+        {
+          number: 'Antworten:',
+          answer: '1) hilfsbereit, 2) geduldig, 3) ehrlich, 4) aufmerksam, 5) qualifiziert, 6) motiviert, 7) ruhig, 8) ausdauernd',
+        },
+      ],
+      ' 6a ': [{ number: 'Antworten:', answer: '1) euch, 2) sich, 3) sich, 4) dich, sich, mich' }],
+      ' 6b ': [{ number: 'Antworten:', answer: '1) dich, mir, 2) dir, mir, mich, 3) dich, mich, mir, 4) mich, mir, mich, dir' }],
+      ' 6c ': [{ number: 'Antworten:', answer: '1) mich, 2) mich, 3) mir, 4) mich, 5) mir, 6) mir, 7) mich, 8) mir, 9) mich, 10) mir' }],
+      ' 6d ': [
+        { number: '1', answer: 'Wir haben uns mit Kollegen getroffen. ' },
+        { number: '2', answer: 'Auf der Baustelle habe ich mir Schutzkleidung angezogen.' },
+        { number: '3', answer: 'Bei der Arbeit haben wir uns sehr gut konzentrieren müssen. ' },
+        { number: '4', answer: 'Sie sollten sich nach den Verträgen erkundigen. ' },
+        { number: '5', answer: 'Gestern hat sich unser neuer Mitarbeiter vorgestellt. ' },
+        { number: '6', answer: 'Letzte Woche haben wir uns gut unterhalten.' },
+      ],
+      ' 7 ': [
+        {
+          number: 'Antworten:',
+          answer:
+            '1) vorbereitet, 2) vorgestellt, 3) erkundigt, 4) beschäftigt, 5) gemerkt, 6) gegeben, 7) gestellt, 8) gemacht, 9) verabschiedet, 10) verabredet',
+        },
+      ],
+      ' 8 ': [{ number: 'Antworten:', answer: '1d, 2f, 3a, 4g, 5c, 6e, 7b' }],
+      ' 9a ': [{ number: 'Antworten:', answer: '1 Beginn, 2 Ende, 3 Ende, 4 Beginn, 5 Ende, 6 Beginn, 7 Ende, 8 Beginn' }],
+      ' 9b ': [{ number: 'Antworten:', answer: '1a, 2a, 3c, 4b' }],
+      ' 10a ': [{ number: 'Antworten:', answer: '1 vereinbaren, 2 die Bestellung, 3 präsentieren, 4 die Garantie, 5 besprechen, 6 die Werbung' }],
+      ' 10b ': [
+        { number: 'Falsch:', answer: '1 informieren, 2 bestellen, 3 absagen, 4 kontaktieren, 5 formulieren, 6 machen, 7 beliefern, 8 lagern' },
+      ],
+      ' 11a ': [{ number: 'Antworten:', answer: '1a, 2a, 3a, 4b, 5c, 6a, 7b, 8c' }],
+      ' 12a ': [
+        { number: 'Wünsche formulieren:', answer: 'Wir benötigen, Könnten Sie …? Wir brauchen …' },
+        { number: 'einen Vorschlag machen:', answer: 'Wir könnten auch … / Eine Möglichkeit wäre …' },
+        {
+          number: 'über Preise und Lieferzeiten sprechen:',
+          answer:
+            'Die Lieferung müsste sehr schnell erfolgen. / Ist ein Preisnachlass möglich? / Ab welcher Menge könnten wir einen Rabatt bekommen?',
+        },
+        { number: 'Lösungen anbieten:', answer: 'Das können wir für Sie erledigen. / Was halten Sie davon, wenn …' },
+        { number: 'Bedauern ausdrücken:', answer: 'Es tut uns leid, aber … ' },
+      ],
+      ' LK ': [
+        { number: '1', answer: '1 falsch, 2 richtig, 3 richtig, 4 falsch' },
+        { number: '2', answer: '1 Messe, 2 Produkte, 3 Angebot, 4 Lieferzeit, 5 Konditionen, 6 Vertrag, 7 Termin, 8 Fragen' },
+      ],
     },
   },
   {
